@@ -9,4 +9,10 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  modules: ['@nuxt/content', '@nuxtjs/i18n'],
+  content: {
+    experimental: {
+      sqliteConnector: 'native'
+    }
+  }
 })

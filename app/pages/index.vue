@@ -1,11 +1,18 @@
 <template>
-  <div class="p-4 text-2xl font-sans text-primary bg-background ">
-    index
+  <div>
+    <section-hero />
+    <section-what />
+    <section-why />
+    <section-process />
+    <section-maps />
+    <section-demo />
+    <section-us />
+    <section-footer />
   </div>
 </template>
 
 <script lang="ts" setup>
-
+const { data: home } = await useAsyncData(() => queryCollection('content').path('/').first())
 </script>
 
 <style>

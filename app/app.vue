@@ -1,5 +1,10 @@
 <template>
   <div>
-    <NuxtPage />
+    <app-nav />
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <NuxtPage />
+      </div>    
+    </div>
   </div>
 </template>
