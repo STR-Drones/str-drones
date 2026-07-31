@@ -2,8 +2,7 @@
   <div class="collapsible-item text-foreground">
     <div class="bg-primary text-xl w-[2em] aspect-square"></div>  
     <button class="collapsible-item-header font-size-2xl" 
-      @click="handleToggle()" 
-      @mouseenter="handleHover()"
+      @click="handleToggle()"
       :aria-expanded="open"
       :aria-controls="`${props.i}-ctnt`"
       :id="`${props.i}-button`"
