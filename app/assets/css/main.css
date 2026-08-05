@@ -67,14 +67,12 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 
 body {
   color: var(--color-foreground);
   background-color: var(--color-background);
   letter-spacing: -0.025em;
-  overflow-x: hidden;
 }
 
 #smooth-wrapper {

@@ -1,18 +1,23 @@
 <template>
   <div ref="hero" class="section-hero relative min-h-screen bg-background text-center flex flex-col justify-center items-center overflow-hidden">
-    <div class="p-(--md) z-4 absolute top-[50%] transform translate-y-[-50%]">
+    <div class="text-group p-(--md) z-4 absolute top-[50%] transform translate-y-[-50%]">
       <div class="text-headline text-2xl">Despeja la niebla</div>
-      <div class="text-secondary opacity-0 text-lg max-w-[50ch] leading-[1.2] text-balance">Visualizamos tu instalación solar con drones. Obtén imágenes y datos detallados para prevenir riesgos, aumentar beneficios y reducir costes.</div>
+      <div class="text-secondary opacity-0 mt-(--sm) text-lg max-w-[50ch] leading-[1.2] text-balance">Visualizamos tu instalación solar con drones. Obtén imágenes y datos detallados para prevenir riesgos, aumentar beneficios y reducir costes.</div>
     </div>
+    <div class="scroll text-sm bg-gray-light tracking-wider uppercase font-mono p-1 leading-[1.1] absolute z-10 bottom-(--md)">SCROLL</div>
     <img src="@/assets/placa-bg.jpg" class="absolute z-1 inset-0 w-full h-screen"/>
     <div class="gradient-bg"></div>
     <div class="gradient-aux"></div>
+    <div class="gradient-fixed"></div>
   </div>
 </template>
 
 <script setup>
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { onMounted, ref } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
 
 let ctx
 const hero = ref(null)
@@ -25,14 +30,14 @@ onMounted(() => {
   }) */
 
   ctx = gsap.context(() => {
-  let tl = gsap.timeline({
+    let tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".section-hero",
+        trigger: hero.value,
         pin: true, // pin the trigger element while active
         start: "top top", // when the top of the trigger hits the top of the viewport
-        end: "+=800", // end after scrolling 500px beyond the start
+        end: "+=1200", // end after scrolling 500px beyond the start
         scrub: .2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-        markers: true,
+        //markers: true,
         snap: {
           snapTo: "labels", // snap to the closest label in the timeline
           duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
@@ -41,15 +46,14 @@ onMounted(() => {
         },
       },
     })
-  }
 
-
-  
-
-  // add animations and labels to the timeline
-  tl.addLabel("start")
+    tl.addLabel("start")
     .to(".gradient-bg", { opacity: 0 })
-    .addLabel("appear")
+    .to(".gradient-aux", { opacity: 0 }, '<')
+    .to(".scroll", { opacity: 0, y: 20 }, '<')
+    .to(".text-group", { yPercent: 45, scale: 0.9 }, "<0.1")
+    .to(".text-secondary", { opacity: 1 }, "<0.2")
+  })
 })
 
 </script>
@@ -63,7 +67,7 @@ onMounted(() => {
   z-index: 3;
   opacity: 1;
   background: rgba(247, 245, 237, 0.1);
-  background: radial-gradient(circle,rgba(247, 245, 237, 0) 0%, rgba(247, 245, 237, 1) 43%);
+  background: radial-gradient(circle,rgba(247, 245, 237, 0) 0%, rgba(247, 245, 237, 1) 33%);
 }
 
 .gradient-aux {
@@ -74,5 +78,15 @@ onMounted(() => {
   z-index: 5;
   opacity: .8;
   background: linear-gradient(180deg, rgba(247, 245, 237, 0) 0%, rgba(247, 245, 237, 0.8) 43%); 
+}
+
+.gradient-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 70vh;
+  z-index: 2;
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(247, 245, 237, 0) 0%, rgba(247, 245, 237, 1) 80%); 
 }
 </style>

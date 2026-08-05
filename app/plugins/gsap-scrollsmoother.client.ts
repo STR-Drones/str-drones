@@ -17,12 +17,12 @@ export default defineNuxtPlugin((nuxtApp) => {
       smoother = null
     }
 
-    ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
+    //ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
     ScrollTrigger.refresh()
   }
 
   const init = () => {
-    cleanup()
+    //cleanup()
 
     const wrapper = document.getElementById('smooth-wrapper')
     const content = document.getElementById('smooth-content')
@@ -44,7 +44,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   }
 
   nuxtApp.hook('page:start', () => {
-    cleanup()
+    //cleanup()
   })
 
   nuxtApp.hook('page:finish', () => {

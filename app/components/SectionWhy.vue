@@ -4,9 +4,9 @@
     <div class="max-w-(--max-width) mx-auto">
       <div class="flex mt-(--md) gap-(--md)">
         <div class="text-3xl leading-[0.9]">5%</div>
-        <div class="text-lg w-[50ch] leading-tight ml-auto text-balance">
+        <animated-p class="text-lg w-[50ch] leading-tight ml-auto text-balance">
           En España, cada año, un 5% de las placas solares instaladas fallan, lo que genera pérdidas de rentabilidad y riesgos de incendio que ponen en peligro toda la instalación. STR previene, identifica y diagnostica estos fallos.
-        </div>
+        </animated-p>
       </div>
       <cells-svg class="mt-(--lg)" />
       <div class="transform -translate-y-20 card mx-auto bg-gray-dark border border-gray text-base text-gray-light uppercase font-mono p-2 max-w-[50ch] leading-[1.1]">

@@ -31,7 +31,7 @@
 <script setup>
 import { gsap } from 'gsap'
 
-let open = ref(false)
+let open = ref(true)
 
 const props = defineProps({
   title: String,
