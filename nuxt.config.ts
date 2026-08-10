@@ -14,5 +14,12 @@ export default defineNuxtConfig({
     experimental: {
       sqliteConnector: 'native'
     }
+  },
+  i18n: {
+    defaultLocale: 'es',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'es', name: 'Español', file: 'es.json' }
+    ]
   }
 })

@@ -1,8 +1,15 @@
 <template>
   <section class="section-what px-(--md) pt-(--xl) pb-(--md) min-h-screen">
-    <marker-section name="what" number="01" />
+    <marker-section>
+      <template #title>
+        <slot name="section-title"></slot>
+      </template>
+      <template #number>
+        <slot name="section-number"></slot>
+      </template>
+    </marker-section>
     <div class="flex flex-col gap-(--md)">
-      <collapsible-item v-for="i in 4" title="title asfgasfafss" description="asdfgsdgdsgg!!" :i="1"></collapsible-item>
+      <slot name="list"></slot>
     </div>
   </section>
 </template>

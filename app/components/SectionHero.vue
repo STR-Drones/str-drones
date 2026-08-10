@@ -1,8 +1,12 @@
 <template>
   <div ref="hero" class="section-hero relative min-h-screen bg-background text-center flex flex-col justify-center items-center overflow-hidden">
-    <div class="text-group p-(--md) z-4 absolute top-[50%] transform translate-y-[-50%]">
-      <div class="text-headline text-2xl">Despeja la niebla</div>
-      <div class="text-secondary opacity-0 mt-(--sm) text-lg max-w-[50ch] leading-[1.2] text-balance">Visualizamos tu instalación solar con drones. Obtén imágenes y datos detallados para prevenir riesgos, aumentar beneficios y reducir costes.</div>
+    <div class="text-group px-(--md) pt-0 pb-(--lg) z-4 absolute">
+      <div class="text-headline text-2xl">
+        <slot></slot>
+      </div>
+      <div class="text-secondary opacity-0 mt-(--sm) text-lg max-w-[50ch] leading-[1.2] text-balance">
+        <slot name="description"></slot>
+      </div>
     </div>
     <div class="scroll text-sm bg-gray-light tracking-wider uppercase font-mono p-1 leading-[1.1] absolute z-10 bottom-(--md)">SCROLL</div>
     <img src="@/assets/placa-bg.jpg" class="absolute z-1 inset-0 w-full h-screen"/>
@@ -29,6 +33,11 @@ onMounted(() => {
     duration: 5,
   }) */
 
+  gsap.set('.text-group', {
+    yPercent: 65,
+    opacity: 1
+  })
+
   ctx = gsap.context(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -51,7 +60,7 @@ onMounted(() => {
     .to(".gradient-bg", { opacity: 0 })
     .to(".gradient-aux", { opacity: 0 }, '<')
     .to(".scroll", { opacity: 0, y: 20 }, '<')
-    .to(".text-group", { yPercent: 45, scale: 0.9 }, "<0.1")
+    .to(".text-group", { yPercent: 0, bottom: 40, scale: 0.9 }, "<0.1")
     .to(".text-secondary", { opacity: 1 }, "<0.2")
   })
 })
@@ -59,6 +68,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.text-group {
+  bottom: 50%;
+  opacity: 0;
+}
+
 .gradient-bg {
   position: absolute;
   bottom: 0;

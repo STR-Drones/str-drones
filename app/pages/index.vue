@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <ContentRenderer :value="home" />
+  <!-- <div>
     <section-hero />
     <section-what />
     <section-why />
@@ -8,7 +9,7 @@
     <section-demo />
     <section-us />
     <section-footer />
-  </div>
+  </div> -->
 </template>
 
 <script lang="ts" setup>

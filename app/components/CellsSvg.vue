@@ -1,5 +1,5 @@
 <template>
-    <div class="relative cells-svg">
+    <div class="relative cells-svg" ref="cells">
       <svg class="w-full" viewBox="0 0 1420 650" xmlns="http://www.w3.org/2000/svg">
         <path class="cell" d="M898.787 0L881.074 17.7129L863.362 0L856.002 7.3596L873.715 25.0725L856.002 42.827L838.247 60.54L820.534 42.827L802.822 25.0725L820.534 7.3596L813.175 0L795.42 17.7129L777.707 0L770.348 7.3596L788.061 25.0725L770.348 42.827L777.707 50.1866L795.42 32.4737L813.175 50.1866L830.888 67.8996L813.175 85.6541L795.42 103.367L777.707 85.6541L770.348 93.0137L788.061 110.727L770.348 128.44L777.707 135.841L795.42 118.086L813.175 135.841L820.534 128.44L802.822 110.727L820.534 93.0137L838.247 75.2592L856.002 93.0137L873.715 110.727L856.002 128.44L863.362 135.841L881.074 118.086L898.787 135.841L906.189 128.44L888.434 110.727L906.189 93.0137L898.787 85.6541L881.074 103.367L863.362 85.6541L845.607 67.8996L863.362 50.1866L881.074 32.4737L898.787 50.1866L906.189 42.827L888.434 25.0725L906.189 7.3596L898.787 0Z" />
         <path class="cell" d="M1027.23 128.443L1009.52 146.156L991.805 128.443L984.445 135.803L1002.16 153.516L984.445 171.27L966.691 188.983L948.978 171.27L931.265 153.516L948.978 135.803L941.618 128.443L923.864 146.156L906.151 128.443L898.791 135.803L916.504 153.516L898.791 171.27L906.151 178.63L923.864 160.917L941.618 178.63L959.331 196.343L941.618 214.097L923.864 231.81L906.151 214.097L898.791 221.457L916.504 239.17L898.791 256.883L906.151 264.284L923.864 246.53L941.618 264.284L948.978 256.883L931.265 239.17L948.978 221.457L966.691 203.703L984.445 221.457L1002.16 239.17L984.445 256.883L991.805 264.284L1009.52 246.53L1027.23 264.284L1034.63 256.883L1016.88 239.17L1034.63 221.457L1027.23 214.097L1009.52 231.81L991.805 214.097L974.05 196.343L991.805 178.63L1009.52 160.917L1027.23 178.63L1034.63 171.27L1016.88 153.516L1034.63 135.803L1027.23 128.443Z" />
@@ -31,7 +31,7 @@
         <path class="cell" d="M256.883 385.205L239.17 402.918L221.457 385.205L214.097 392.564L231.81 410.277L214.097 428.032L196.343 445.745L178.63 428.032L160.917 410.277L178.63 392.564L171.27 385.205L153.516 402.918L135.803 385.205L128.443 392.564L146.156 410.277L128.443 428.032L135.803 435.391L153.516 417.679L171.27 435.391L188.983 453.104L171.27 470.859L153.516 488.572L135.803 470.859L128.443 478.219L146.156 495.931L128.443 513.644L135.803 521.046L153.516 503.291L171.27 521.046L178.63 513.644L160.917 495.931L178.63 478.219L196.343 460.464L214.097 478.219L231.81 495.931L214.097 513.644L221.457 521.046L239.17 503.291L256.883 521.046L264.284 513.644L246.53 495.931L264.284 478.219L256.883 470.859L239.17 488.572L221.457 470.859L203.703 453.104L221.457 435.391L239.17 417.679L256.883 435.391L264.284 428.032L246.53 410.277L264.284 392.564L256.883 385.205Z" />
       </svg>
       <div class="cell-overlay-grid">
-        <div class="cell-item" v-for="i in 55"></div>
+        <div class="cell-item" :key="'cell-item-' +  i" v-for="i in 55"></div>
       </div>
     </div>
 </template>
@@ -41,26 +41,29 @@ import { ref, onMounted } from 'vue';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
-gsap.registerPlugin(ScrollTrigger);
+const cells = ref(null)
+
+gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.cells-svg',
+      trigger: cells.value,
       start: 'top 80%',
       end: 'bottom 20%',
+      onEnter: ({progress, direction, isActive}) => console.log(progress, direction, isActive)
     }
   })
-  tl.from('.cell-item', {
-    background: 'var(--color-primary)',
+  tl.to('.cell-item', {
+    background: 'transparent',
     duration: 0.01,
     stagger: {
       each: 0.01,
       from: 'random',
     } 
   })
-  tl.from('.cell', {
-    opacity: 0,
+  tl.to('.cell', {
+    opacity: 1,
     duration: 0.01,
     stagger: {
       each: 0.02,
@@ -77,12 +80,15 @@ onMounted(() => {
     duration: 0.2,
     yoyo: true,
     repeat: -1,
-    easing: "steps(1)"
   }, '<')
 })
 </script>
 
 <style lang="scss" scoped>
+.cell {
+  opacity: 0;
+}
+
 .cell-overlay-grid {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -105,6 +111,7 @@ onMounted(() => {
     border-style: dotted;
     border-color: transparent;
     transition: all .2s ease-in-out;
+    background: var(--color-primary);
 
     &:nth-child(odd):hover {
       border-color: var(--color-gray-light);

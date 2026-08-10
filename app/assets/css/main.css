@@ -38,32 +38,6 @@
   --max-width: 1400px;
 }
 
-@layer base {
-  p {
-    font-size: var(--text-base);
-    line-height: 1.2;
-  }
-  h1 {
-    font-size: var(--text-2xl);
-    line-height: 1.1;
-    letter-spacing: -0.05em;
-  }
-  h2 {
-    font-size: var(--text-2xl);
-    line-height: 1.1;
-    letter-spacing: -0.05em;
-  }
-  h3 {
-    font-size: var(--text-lg);
-    line-height: 1.1;
-    letter-spacing: -0.05em;
-  }
-  h4 {
-    font-size: var(--text-md);
-    text-transform: uppercase;
-  }
-}
-
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -72,7 +46,7 @@ html {
 body {
   color: var(--color-foreground);
   background-color: var(--color-background);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
 }
 
 #smooth-wrapper {

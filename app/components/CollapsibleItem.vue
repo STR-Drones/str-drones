@@ -7,9 +7,9 @@
       :aria-controls="`${props.i}-ctnt`"
       :id="`${props.i}-button`"
     >
-      <div class="border-t border-b border-gray-light">
+      <div class="border-t border-b border-gray-light ml-(--md)">
         <div class="flex text-xl leading-[2em] items-center">
-          <div>{{ props.title }}</div>
+          <div><slot></slot></div>
           <div :class="['toggle ml-auto flex items-center justify-center aspect-square h-[1.1em] p-4 bg-gray-light text-foreground', { open }]">
             <svg class="w-full stroke-current stroke-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.74 47.74">
               <line class="cls-1" y1="23.87" x2="47.74" y2="23.87"/><line class="cls-1" x1="23.87" y1="47.74" x2="23.87"/>
@@ -18,8 +18,8 @@
         </div>
         <Transition name="slide">
           <div class="collapsible-item-content text-lg text-left pb-(--md)" v-show="open" :id="`${props.i}-ctnt`" :aria-labelledby="`${props.i}-button`">
-            <div>
-              {{ props.description }}
+            <div class="leading-[1.3]">
+              <slot name="description"></slot>
             </div>
           </div>
         </Transition>

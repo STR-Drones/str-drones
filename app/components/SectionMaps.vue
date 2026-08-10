@@ -1,6 +1,13 @@
 <template>
   <div class="p-(--md) h-screen">
-    <marker-section number="04" name="STR Maps"></marker-section>
+    <marker-section>
+      <template #title>
+        <slot name="section-title"></slot>
+      </template>
+      <template #number>
+        <slot name="section-number"></slot>
+      </template>
+    </marker-section>
   </div>
 </template>
 
