@@ -8,9 +8,9 @@
         <slot name="section-number"></slot>
       </template>
     </marker-section>
-    <div class="text-xl max-w-[30ch] text-balance leading-[1.1] mt-(--md)">
-      Somos un equipo familiar, apasionado de la tecnología y obsesionado con resolver tus problemas. 
-    </div>
+    <animated-p class="text-xl max-w-[30ch] text-balance leading-[1.1] mt-(--md)">
+      <slot></slot>
+    </animated-p>
   </div>
 </template>
 

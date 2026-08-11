@@ -1,7 +1,7 @@
 <template>
-  <div class="collapsible-item text-foreground">
+  <div class="collapsible-item max-w-[75rem] text-foreground w-full ml-auto">
     <div class="bg-primary text-xl w-[2em] aspect-square"></div>  
-    <button class="collapsible-item-header font-size-2xl" 
+    <button class="collapsible-item-header" 
       @click="handleToggle()"
       :aria-expanded="open"
       :aria-controls="`${props.i}-ctnt`"
@@ -17,8 +17,8 @@
           </div>
         </div>
         <Transition name="slide">
-          <div class="collapsible-item-content text-lg text-left pb-(--md)" v-show="open" :id="`${props.i}-ctnt`" :aria-labelledby="`${props.i}-button`">
-            <div class="leading-[1.3]">
+          <div class="collapsible-item-content text-lg text-left" v-show="open" :id="`${props.i}-ctnt`" :aria-labelledby="`${props.i}-button`">
+            <div class="leading-[1.3] pr-(--text-xl) pb-(--md)">
               <slot name="description"></slot>
             </div>
           </div>

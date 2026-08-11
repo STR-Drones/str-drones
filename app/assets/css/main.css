@@ -23,7 +23,7 @@
   --text-lg: 1.7rem;
   --text-xl: 3rem;
   --text-2xl: 7rem;
-  --text-3xl: 12rem;
+  --text-3xl: 10.5rem;
 
   --xs: calc(var(--spacing) * 2);
   --sm: calc(var(--spacing) * 4);

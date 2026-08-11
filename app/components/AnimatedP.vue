@@ -26,7 +26,7 @@ onMounted(() => {
       trigger: animp.value,
       start: "top 80%",
       end: "bottom 20%",
-      markers: true
+      //markers: true
     }
   })
 })

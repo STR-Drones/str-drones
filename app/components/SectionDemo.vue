@@ -10,9 +10,9 @@
     </marker-section>
     <div class="relative max-w-(--max-width) mx-auto text-center flex flex-col items-center z-10 m-auto pb-(--lg)">
       <div class="text-2xl"><slot></slot></div>
-      <div class="text-lg max-w-[40ch] leading-[1.2]">
+      <animated-p class="text-lg max-w-[40ch] leading-[1.2]">
         <slot name="description"></slot>
-      </div>
+      </animated-p>
       <div class="flex flex-col gap-2">
         <label for="name" class="text-sm font-mono text-gray uppercase mt-(--md)">Introduce tu correo</label>
         <input type="email" id="email" name="name" placeholder="ejemplo@correo.com" class="border border-foreground text-lg px-2 mt-1" />
