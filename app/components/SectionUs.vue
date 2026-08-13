@@ -11,6 +11,7 @@
     <animated-p class="text-xl max-w-[30ch] text-balance leading-[1.1] mt-(--md)">
       <slot></slot>
     </animated-p>
+    <stories-carousel />
   </div>
 </template>
 
