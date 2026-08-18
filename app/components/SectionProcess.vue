@@ -9,7 +9,7 @@
       </template>
     </marker-section>
     <div class="max-w-(--max-width) mx-auto">
-      <div class="text-2xl text-center my-(--lg)"><slot></slot></div>
+      <gradient-h class="text-2xl text-center my-(--lg)"><slot></slot></gradient-h>
       <div class="relative">
         <div class="trig"></div>
         <div ref="meter" class="progress-meter w-full h-screen absolute top-0 border-red">
@@ -44,7 +44,7 @@ onMounted(() => {
         pin: meter.value, // pin the trigger element while active
         start: "top top", // when the top of the trigger hits the top of the viewport
         end: "+=200%", 
-        markers: true,
+        //markers: true,
         scrub: .2, 
       },
     })

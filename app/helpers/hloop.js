@@ -18,7 +18,7 @@ export default function horizontalLoop(items, config) {
   items = gsap.utils.toArray(items);
   config = config || {};
   let tl = gsap.timeline({
-      repeat: config.repeat,
+      repeat: -1,
       paused: config.paused,
       defaults: { ease: "none" },
       onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100),

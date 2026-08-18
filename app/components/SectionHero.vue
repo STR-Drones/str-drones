@@ -1,14 +1,17 @@
 <template>
   <div ref="hero" class="section-hero relative min-h-screen bg-background text-center flex flex-col justify-center items-center overflow-hidden">
     <div class="text-group px-(--md) pt-0 pb-(--lg) z-4 absolute">
-      <div class="text-headline text-2xl">
+      <glowing-h class="text-headline text-2xl">
         <slot></slot>
-      </div>
+      </glowing-h>
       <div class="text-secondary opacity-0 mt-(--sm) text-lg max-w-[50ch] leading-[1.2] text-balance">
         <slot name="description"></slot>
       </div>
     </div>
-    <div class="scroll text-sm bg-gray-light tracking-wider uppercase font-mono p-1 leading-[1.1] absolute z-10 bottom-(--md)">SCROLL</div>
+    <div class="scroll absolute z-10 bottom-(--md)">
+      <div class="bg-gray-light p-2 mb-2"><spinning-logo-hero></spinning-logo-hero></div>
+      <div class="bg-gray-light tracking-wider uppercase font-mono p-1 leading-[1.1] text-sm">SCROLL</div>
+    </div>
     <img src="@/assets/placa-bg.jpg" class="absolute z-1 inset-0 w-full h-screen"/>
     <div class="gradient-bg"></div>
     <div class="gradient-aux"></div>
@@ -47,12 +50,6 @@ onMounted(() => {
         end: "+=1200", // end after scrolling 500px beyond the start
         scrub: .2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
         //markers: true,
-        snap: {
-          snapTo: "labels", // snap to the closest label in the timeline
-          duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-          delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-          ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
-        },
       },
     })
 
@@ -82,6 +79,7 @@ onMounted(() => {
   opacity: 1;
   background: rgba(247, 245, 237, 0.1);
   background: radial-gradient(circle,rgba(247, 245, 237, 0) 0%, rgba(247, 245, 237, 1) 33%);
+  pointer-events: none;
 }
 
 .gradient-aux {
@@ -92,6 +90,7 @@ onMounted(() => {
   z-index: 5;
   opacity: .8;
   background: linear-gradient(180deg, rgba(247, 245, 237, 0) 0%, rgba(247, 245, 237, 0.8) 43%); 
+  pointer-events: none;
 }
 
 .gradient-fixed {
@@ -102,5 +101,6 @@ onMounted(() => {
   z-index: 2;
   opacity: 1;
   background: linear-gradient(180deg, rgba(247, 245, 237, 0) 0%, rgba(247, 245, 237, 1) 80%); 
+  pointer-events: none;
 }
 </style>
