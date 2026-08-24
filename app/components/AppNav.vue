@@ -1,7 +1,7 @@
 <template>
   <div class="app-nav-wrapper w-full mt-(--sm) flex flex-col z-100 px-(--sm) gap-[1px]">
     <div class="font-mono text-base w-full max-w-(--max-width) gap-2 mx-auto bg-background border border-gray-light flex p-2 items-center justify-end">
-      <str-logo class="h-[1.25em] mr-auto" />
+      <str-logo-animated class="mr-auto" />
       <a href="#" class="bg-yellow flex leading-[1.1] h-[2em] px-3 py-2 items-center tracking-wide uppercase">STR Maps</a>
       <button @click="toggleNav" :class="['toggle flex items-center justify-center aspect-square h-[2em] p-2 bg-gray-light text-foreground', showNav ? 'open' : '' ]">
         <svg class="w-full stroke-current stroke-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.74 47.74">
@@ -10,7 +10,7 @@
       </button>
     </div>
     <Transition name="nav">
-      <div class="font-mono leading-wider nav-expanded w-[70%] max-w-(--max-width) mx-auto bg-background border border-gray-light flex flex-col p-3 items-center" v-show="showNav">
+      <div class="font-mono leading-wider nav-expanded w-[90%] md:w-[75%] max-w-(--max-width) mx-auto bg-background border border-gray-light flex flex-col p-3 items-center" v-show="showNav">
         <div class="grid grid-cols-2 gap-3 w-full">
           <div class="flex flex-col gap-1">
             <div class="bg-gray-light w-full px-2 mb-2">WEB</div>

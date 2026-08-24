@@ -1,5 +1,5 @@
 <template>
-  <div :class="['flex gap-2 uppercase font-mono text-base tracking-wider', `scheme-${props.color}`]">
+  <div :class="['flex gap-2 uppercase font-mono text-sm md:text-base tracking-wider', `scheme-${props.color}`]">
     <div class="section-number px-1 h-fit"><slot name="number"></slot></div>
     <div class="section-name px-1 h-fit"><slot name="title"></slot></div>
   </div>

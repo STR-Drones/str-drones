@@ -9,11 +9,11 @@
       </template>
     </marker-section>
     <div class="max-w-(--max-width) mx-auto">
-      <div class="flex mt-(--md) gap-(--md)">
-        <div class="text-3xl leading-[0.9]">
+      <div class="md:flex mt-(--md) gap-(--md)">
+        <div class="text-2xl md:text-3xl leading-[0.9]">
           <slot></slot>
         </div>
-        <animated-p class="text-lg w-[50ch] leading-tight ml-auto text-balance">
+        <animated-p class="mt-2 md:mt-0 text-md md:text-lg max-w-[50ch] leading-tight ml-auto text-balance">
           <slot name="description"></slot>
         </animated-p>
       </div>

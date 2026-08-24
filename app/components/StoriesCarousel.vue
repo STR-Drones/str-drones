@@ -1,9 +1,6 @@
 <template>
   <div>
     <div class="relative">
-      <div class="absolute left-0 top-0 bg-linear-to-r from-background to-transparent h-full z-100 w-[3rem]"></div>
-      <div class="absolute right-0 top-0 bg-linear-to-l from-background to-transparent h-full z-100 w-[3rem]"></div>
-
       <div class="carousel-wrapper">
         <div v-for="video in videos" :key="video.src" class="story" ref="stories">
           <div class="story-inner">
