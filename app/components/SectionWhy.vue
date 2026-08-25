@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-foreground text-background p-(--md)">
+  <div class="bg-foreground text-background p-(--sm) md:p-(--md)">
     <marker-section color="foreground" >
       <template #title>
         <slot name="section-title"></slot>

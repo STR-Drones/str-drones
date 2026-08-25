@@ -1,6 +1,6 @@
 <template>
   <div class="bg-background text-foreground min-h-screen">
-    <div class="p-(--md)">
+    <div class="p-(--sm) md:p-(--md)">
       <marker-section>
         <template #title>
           <slot name="section-title"></slot>
@@ -10,7 +10,7 @@
         </template>
       </marker-section>
     </div>
-    <animated-p class="p-(--md) text-lg md:text-xl max-w-[30ch] text-balance leading-[1.1]">
+    <animated-p class="p-(--sm) md:p-(--md) text-lg md:text-xl max-w-[30ch] text-balance leading-[1.1]">
       <slot></slot>
     </animated-p>
     <stories-carousel />

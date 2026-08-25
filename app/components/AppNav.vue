@@ -1,5 +1,5 @@
 <template>
-  <div class="app-nav-wrapper w-full mt-(--sm) flex flex-col z-100 px-(--sm) gap-[1px]">
+  <div class="app-nav-wrapper w-full relative mt-(--sm) flex flex-col z-100 px-(--sm) gap-[1px]">
     <div class="font-mono text-base w-full max-w-(--max-width) gap-2 mx-auto bg-background border border-gray-light flex p-2 items-center justify-end">
       <str-logo-animated class="mr-auto" />
       <a href="#" class="bg-yellow flex leading-[1.1] h-[2em] px-3 py-2 items-center tracking-wide uppercase">STR Maps</a>
@@ -10,26 +10,29 @@
       </button>
     </div>
     <Transition name="nav">
-      <div class="font-mono leading-wider nav-expanded w-[90%] md:w-[75%] max-w-(--max-width) mx-auto bg-background border border-gray-light flex flex-col p-3 items-center" v-show="showNav">
-        <div class="grid grid-cols-2 gap-3 w-full">
-          <div class="flex flex-col gap-1">
-            <div class="bg-gray-light w-full px-2 mb-2">WEB</div>
-            <a href="" class="link">Enlace 1 Enlace 2</a>
-            <a href="" class="link">Enlace 1 Enlace 2</a>
-          </div>
-          <div class="flex flex-col gap-1">
-            <div class="bg-gray-light w-full px-2 mb-2">LEGAL</div>
-            <a href="" class="link">Enlace 1</a>
-            <a href="" class="link">Enlace 2</a>
-            <a href="" class="link">Enlace 3</a>
-          </div>
+      <div class="nav-expanded w-[90%] max-w-[calc(var(--max-width)*0.85)] mx-auto bg-background border border-gray-light flex flex-col p-3" v-show="showNav">
+        <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">WEB</div>
+        <div class="grid md:grid-cols-3 gap-3 w-full items-baseline mt-1 mb-8">
+          <a href="" class="text-lg link main-link">Blog</a>
+          <a href="" class="text-lg link main-link">Agricultura</a>
+          <a href="" class="text-lg link main-link">Construcción</a>
         </div>
-        <div class="flex flex-col w-full gap-2 mt-(--sm)">
-          <div class="bg-gray-light w-full px-2">CONTACTO</div>
-          <div class="flex gap-2 uppercase">
-            <a href="">Instagram</a>
-            <a href="">Linkedin</a>
-            <a href="mailto:info@str-drones.com">info@str-drones.com</a>
+        <div class="grid md:grid-cols-3 gap-3 w-full items-baseline mt-2">
+          <div class="flex flex-col gap-1">
+            <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">CONTACTO</div>
+            <a class="text-md link" href="tel:+34641147164">+34 641 147 164</a>
+            <a class="text-md link" href="mailto:info@str-drones.com">info@str-drones.com</a>
+          </div>
+          <div class="flex flex-col gap-1">
+            <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">REDES</div>
+            <a class="text-md link" href="">Instagram ↗</a>
+            <a class="text-md link" href="">Linkedin ↗</a>
+          </div>
+          <div class="flex flex-col gap-1">
+            <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">LEGAL</div>
+            <a href="" class="text-md link">Cookies</a>
+            <a href="" class="text-md link">Privacidad</a>
+            <a href="" class="text-md link">Aviso Legal</a>
           </div>
         </div>
       </div>
@@ -67,7 +70,7 @@ const toggleNav = () => {
 }
 
 .nav-leave-active {
-  transition: all 0.3s cubic-bezier(.6,-0.39,.16,1.01);
+  transition: all 0.2s cubic-bezier(.6,-0.39,.16,1.01);
 }
 
 .nav-enter-from {
@@ -76,6 +79,56 @@ const toggleNav = () => {
 
 .nav-leave-to {
   transform: translateY(5px);
-  opacity: 0;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  z-index: 2;
+  transition: all 0.3s cubic-bezier(.6,-0.39,.16,1.01);
+  line-height: 1.4;
+}
+
+.link::after {
+  /* content: '';
+  display: flex;
+  position: absolute;
+  bottom: .1em;
+  width: 100%;
+  height: 0;
+  background: var(--color-primary);
+  z-index: 1;
+  mix-blend-mode: multiply; */
+}
+
+.link::before {
+  content: '';
+  display: flex;
+  position: absolute;
+  left: -.2em;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  background: var(--color-primary);
+  z-index: 1;
+  mix-blend-mode: multiply;
+  transition: all 0.3s cubic-bezier(.6,-0.39,.16,1.01);
+}
+
+.link:hover {
+  padding-left: 1.2em;
+
+  &::after {
+    /* height: 5px; 
+    bottom: .3em; */
+  }
+
+  &::before {
+    height: 1em; 
+    width: 1em; 
+    left: 0;
+  }    
 }
 </style>

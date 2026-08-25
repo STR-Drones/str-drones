@@ -1,7 +1,7 @@
 <template>
-  <div ref="card" class="process-card-wrapper font-mono text-sm md:text-base text-gray-light max-w-[60ch]">
+  <div ref="card" class="process-card-wrapper py-(--sm) md:py-0 font-mono text-sm md:text-base text-gray-light max-w-[60ch]">
     <div ref="icon" class="card-icon bg-gray-dark border border-gray"></div>
-    <div ref="content" class="flex flex-col card-content bg-gray-dark border border-gray min-h-[10em] p-(--sm)">
+    <div ref="content" class="flex flex-col card-content bg-gray-dark border border-gray md:min-h-[10em] p-(--sm)">
       <div class="flex gap-2">
         <div class="bg-primary aspect-square h-[1.6em] flex items-center justify-center text-foreground"><slot name="number"></slot></div>
         <div class="uppercase">
@@ -64,7 +64,7 @@ onMounted(() => {
 
   .card-content, .card-icon {
     opacity: 0;
-    transform: translateY(-20)
+    transform: translateY(-20);
   }
 
   &:nth-child(even) {
@@ -74,6 +74,31 @@ onMounted(() => {
     .card-icon {
       grid-column: 2;
       grid-row: 1;
+    }
+  }
+}
+
+@media (max-width: 52rem) {
+  .process-card-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    .card-icon {
+      grid-row: 2;
+      max-width: 10rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .card-content {
+      grid-row: 1;
+    }
+
+    .card-content, .card-icon {
+      opacity: 0;
+      transform: unset !important;
     }
   }
 }

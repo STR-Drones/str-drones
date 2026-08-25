@@ -1,6 +1,6 @@
 <template>
   <div class="relative bg-background text-foreground min-h-screen flex flex-col">
-    <marker-section class="relative p-(--md) z-10" color="primary">
+    <marker-section class="relative p-(--sm) md:p-(--md) z-10" color="primary">
       <template #title>
         <slot name="section-title"></slot>
       </template>
@@ -9,8 +9,8 @@
       </template>
     </marker-section>
     <div class="relative max-w-(--max-width) mx-auto text-center flex flex-col items-center z-10 m-auto pb-(--lg)">
-      <div class="text-xl leading-[1.1] md:text-2xl"><slot></slot></div>
-      <animated-p class="text-md md:text-lg max-w-[40ch] leading-[1.2]">
+      <div class="text-xl leading-[1.1] md:text-2xl p-(--sm)"><slot></slot></div>
+      <animated-p class="text-md md:text-lg max-w-[40ch] leading-[1.2] text-balance p-(--sm)">
         <slot name="description"></slot>
       </animated-p>
       <div class="flex flex-col gap-2">

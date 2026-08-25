@@ -30,15 +30,15 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .glowing-h {
-  text-shadow: 0px 0px 1px #EDFF00AA;
+  text-shadow: 0px 0px 4px #ffffffdd;
 }
 
 .glowing-h-blur {
   color: var(--color-primary);
-  filter: blur(2px);
+  filter: blur(4px);
   mask-image: linear-gradient(90deg, transparent 20%, black 50%, transparent 80%);
   mask-size: 200% 100%;
-  opacity: .7;
+  opacity: .8;
   animation: moveMask 3s infinite linear;
   z-index: -1;
 }

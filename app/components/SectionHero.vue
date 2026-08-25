@@ -30,12 +30,6 @@ let ctx
 const hero = ref(null)
 
 onMounted(() => {
-  /* gsap.to('.gradient-bg', {
-    scale: 1.03,
-    x: -400,
-    duration: 5,
-  }) */
-
   gsap.set('.text-group', {
     yPercent: 65,
     opacity: 1
