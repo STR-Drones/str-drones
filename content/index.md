@@ -1,5 +1,5 @@
 ::section-hero
-Despeja la niebla!
+Despeja la niebla
 #description
 Visualizamos tu instalación solar con drones. Obtén imágenes y datos detallados para prevenir riesgos, aumentar beneficios y reducir costes.
 ::
