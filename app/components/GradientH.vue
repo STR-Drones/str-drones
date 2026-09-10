@@ -8,7 +8,7 @@
 <script setup>
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { ref, onMounted } from 'Vue'
+import { ref, onMounted } from 'vue'
 
 gsap.registerPlugin(ScrollTrigger)
 

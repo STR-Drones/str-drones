@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-import {ref, onMounted} from 'Vue'
+import { ref, onMounted } from 'vue'
 const showNav = ref(false)
 
 const toggleNav = () => {
