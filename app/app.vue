@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-nav />
+    <!-- <app-nav /> -->
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <NuxtPage />
