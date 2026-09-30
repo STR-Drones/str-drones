@@ -36,6 +36,7 @@
   --nav-height: calc(var(--text-md) * 0.9 + var(--sm) * 2);
   --footer-height: calc(var(--text-md) * 0.9 + var(--sm) * 2);
   --max-width: 1400px;
+  --nav-max-width: 1150px;
   --breakpoint-md: 54rem;
 }
 
