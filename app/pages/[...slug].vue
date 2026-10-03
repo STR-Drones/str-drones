@@ -35,7 +35,7 @@ const { data: page } = await useAsyncData(
   }
 
   h1 {
-    font-size: var(--text-xl);
+    font-size: var(--text-3xl);
     line-height: 1;
     text-wrap: balance;
     padding: var(--md) 0;

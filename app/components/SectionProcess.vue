@@ -9,7 +9,7 @@
       </template>
     </marker-section>
     <div class="max-w-(--max-width) mx-auto">
-      <gradient-h class="text-lg md:text-2xl text-center my-(--lg)"><slot></slot></gradient-h>
+      <gradient-h class="text-3xl text-center my-(--lg)"><slot></slot></gradient-h>
       <div class="relative">
         <div class="trig"></div>
         <div ref="meter" class="hidden md:block progress-meter w-full h-screen absolute top-0 border-red">

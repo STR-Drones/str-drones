@@ -1,5 +1,5 @@
 <template>
-  <div ref="card" class="process-card-wrapper py-(--sm) md:py-0 font-mono text-sm md:text-base text-gray-light max-w-[60ch]">
+  <div ref="card" class="process-card-wrapper py-(--sm) md:py-0 font-mono text-base text-gray-light max-w-[60ch]">
     <div ref="icon" class="card-icon bg-gray-dark border border-gray"></div>
     <div ref="content" class="flex flex-col card-content bg-gray-dark border border-gray md:min-h-[10em] p-(--sm)">
       <div class="flex gap-2">

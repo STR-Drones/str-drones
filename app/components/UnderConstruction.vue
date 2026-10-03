@@ -5,7 +5,7 @@
         Disponible Próximamente
       </div>
     </div>
-    <div class="text-balance text-xl md:text-[7em] leading-[.8] text-background px-(--md) pb-(--md)">
+    <div class="text-balance text-3xl md:text-[7em] leading-[.8] text-background px-(--md) pb-(--md)">
       Estamos trabajando en nuestra <span class="text-primary">nueva web</span>
     </div>
     <div>
