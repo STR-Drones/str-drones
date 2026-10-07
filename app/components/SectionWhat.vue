@@ -1,6 +1,6 @@
 <template>
   <section class="relative section-what px-(--sm) md:px-(--md) pt-(--xl) pb-(--md) min-h-screen">
-    <marker-section class="absolute top-0 left-0 px-(--sm) md:px-(--md) pt-(--xl)">
+    <marker-section class="xl:absolute top-0 left-0 xl:px-(--md) pt-(--xl) pb-(--md) xl:pb-0">
       <template #title>
         <slot name="section-title"></slot>
       </template>

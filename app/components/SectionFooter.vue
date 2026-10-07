@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-  <str-logo class="pt-(--lg) mt-auto"/>
+  <str-logo class="pt-(--lg) pb-(--md) mt-auto"/>
   </div>
 </template>
 

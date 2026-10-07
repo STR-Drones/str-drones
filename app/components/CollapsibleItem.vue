@@ -8,8 +8,8 @@
       :id="`${props.i}-button`"
     >
       <div class="border-t border-b border-gray-light ml-(--md)">
-        <div class="flex pt-2 md:pt-0 text-xl leading-[1.3] text-left md:leading-[2em] items-start md:items-center">
-          <div><slot></slot></div>
+        <div class="flex pt-2 md:pt-0 text-xl leading-[1.2] min-h-[2em] text-left items-start md:items-center">
+          <div class="py-2"><slot></slot></div>
           <div :class="['toggle ml-auto flex items-center justify-center aspect-square h-[1.5em] md.h-[1.1em] p-2 md:p-4 bg-gray-light text-foreground', { open }]">
             <svg class="w-full stroke-current stroke-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.74 47.74">
               <line class="cls-1" y1="23.87" x2="47.74" y2="23.87"/><line class="cls-1" x1="23.87" y1="47.74" x2="23.87"/>
