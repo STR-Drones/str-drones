@@ -1,5 +1,5 @@
 <template>
-  <div class="collapsible-item max-w-[65rem] text-foreground w-full ml-auto">
+  <div class="collapsible-item max-w-[72em] text-foreground w-full ml-auto">
     <div class="bg-primary text-xl w-[2em] aspect-square"></div>  
     <button class="collapsible-item-header" 
       @click="handleToggle()"

@@ -39,8 +39,8 @@
   --spacing: .2rem;
   --nav-height: calc(var(--text-md) * 0.9 + var(--sm) * 2);
   --footer-height: calc(var(--text-md) * 0.9 + var(--sm) * 2);
-  --max-width: 1400px;
-  --nav-max-width: 1150px;
+  --max-width: 1600px;
+  --nav-max-width: 1200px;
   --breakpoint-md: 54rem;
 }
 
@@ -132,6 +132,6 @@ body {
 /* Ultra Wide Displays */
 @media screen and (min-width: 100em) { /* 1600px */
   :root {
-    --font-size-base: 1.25rem; /* Optional: scale up slightly for 4k/large screens */
+    --font-size-base: 1.3rem; /* Optional: scale up slightly for 4k/large screens */
   }
 }

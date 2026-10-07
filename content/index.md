@@ -1,7 +1,7 @@
 ::section-hero
 Despeja la niebla
 #description
-Visualizamos tu instalación solar con drones. Obtén imágenes y datos detallados para prevenir riesgos, aumentar beneficios y reducir costes.
+Tu equipo no debería pisar la planta a ciegas. Inspeccionamos con dron y termografía para que sepas, antes de salir a campo, qué averías vas a encontrar y dónde están.
 ::
 
 ::section-what
@@ -11,24 +11,29 @@ Visualizamos tu instalación solar con drones. Obtén imágenes y datos detallad
 QUÉ HACE STR
 #list
   ::collapsible-item
-  Automatiza y ahorra tiempo
+  Evita la pérdida de producción y previene el riesgo de incendio
   #description
-  Generamos una ortofoto de tu instalación para ver toda la instalación en una imagen y eliminar la necesidad de revisar miles de fotos una a una. Diagnosticamos para que tú puedas reparar.
+  Cada avería que no detectas a tiempo te cuesta rendimiento — y en los casos más graves, puede convertirse en un riesgo real de incendio. STR Maps distingue un defecto de otro para que sepas cuál intervenir primero.
   ::
   ::collapsible-item
-  Visualiza todos los datos 
+  Visualiza tu planta entera, panel a panel
   #description
-  Con STR Maps, visualiza datos generales y pormenorizados de tu instalación para poder tomar decisiones rápidas sobre tus activos, desde cualquier dispositivo.
+  STR Maps convierte miles de imágenes en un único grid navegable y geolocalizado de tu instalación. Ves el estado de todo tu portafolio de un vistazo y bajas hasta el panel exacto sin pisar el campo.
+  ::
+  ::collapsible-item
+  Diagnostica hasta 30 veces más rápido
+  #description
+  Detecta y clasifica automáticamente cada anomalía —eléctrica o mecánica— en imagen térmica y RGB. Inspeccionamos hasta 30 veces más rápido que a mano, y 6 veces más rápido que un dron sin software especializado.
   ::
   ::collapsible-item
   Centraliza el control
   #description
-  Centralizamos, simplificamos y automatizamos los procesos de tratamiento de imágenes, vuelo autónomo y el análisis y reporte de datos, todo en la misma herramienta.
+  Vuelo, procesado de imágenes, análisis y generación de informes: todo en una sola herramienta. Sin exportar datos entre plataformas ni depender de varios proveedores para tener el diagnóstico completo.
   ::
   ::collapsible-item
   Es IEC Compliant
   #description
-  Centralizamos, simplificamos y automatizamos los procesos de tratamiento de imágenes, vuelo autónomo y el análisis y reporte de datos, todo en la misma herramienta.
+  Tus informes cumplen la norma IEC 62446-3, el estándar que piden promotores, aseguradoras y financiadores. Documentación lista para el cierre de obra, una reclamación a fabricante o una auditoría de due diligence.
   ::
 ::
 
@@ -69,33 +74,27 @@ El proceso
   #number
   02
   #description
-  Utilizamos nuestros drones para capturar imágenes en color e imágenes termográficas que nos permiten ver la temperatura para diagnosticar problemas
+  Sobrevolamos tu instalación completa capturando imágenes térmicas y RGB de alta resolución — la materia prima de todo el diagnóstico que viene después.
   ::
   ::process-card
   Procesamos los datos
   #number
   03
   #description
-  Obtenemos información útil y veraz de las imágenes brutas haciéndolas pasar por un tratamiento experto y comprobado.
+  Convertimos las imágenes en un grid único y geolocalizado de tu instalación. Los algoritmos detectan cada anomalía y la clasifican como defecto eléctrico o mecánico, con revisión técnica final.
   ::
   ::process-card
   Visualizamos tus resultados
   #number
   04
   #description
-  Te presentamos un diagnóstico completo y accesible en un solo vistazo, para que puedas entender tu instalación, tomar acción en tus problemas y optimizar puntos débiles.
+  Todo tu diagnóstico en un único panel: claro, navegable y accesible desde cualquier dispositivo. Así decides qué reparar primero.
   ::
-::
-::section-maps
-#section-number
-04
-#section-title
-STR Maps
 ::
 ::section-demo
 Pide una demo
 #section-number
-05
+04
 #section-title
 Te lo enseñamos
 #description
@@ -104,7 +103,7 @@ En menos de 24h te atenderemos para resolver cualquier duda y enseñarte como un
 ::section-us
 Somos un equipo familiar, apasionado de la tecnología y obsesionado con resolver tus problemas. 
 #section-number
-06
+05
 #section-title
 Nosotros
 ::

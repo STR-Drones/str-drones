@@ -4,7 +4,7 @@
       <glowing-h class="text-headline text-hero leading-[1.1]">
         <slot></slot>
       </glowing-h>
-      <div class="text-secondary opacity-0 mt-(--md) text-lg max-w-[50ch] leading-[1.2] text-balance">
+      <div class="text-secondary mx-auto opacity-0 mt-(--md) text-lg max-w-[50ch] leading-[1.2] text-balance">
         <slot name="description"></slot>
       </div>
     </div>
