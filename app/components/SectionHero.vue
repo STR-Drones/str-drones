@@ -12,7 +12,7 @@
       <div class="bg-gray-light p-2 mb-2"><spinning-logo-hero></spinning-logo-hero></div>
       <div class="bg-gray-light tracking-wider uppercase font-mono p-1 leading-[1.1] text-sm">SCROLL</div>
     </div>
-    <img src="@/assets/placa-bg.jpg" class="absolute z-1 inset-0 w-full h-screen"/>
+    <img src="@/assets/placa-bg.jpg" class="absolute z-1 inset-0 w-full h-screen object-cover"/>
     <div class="gradient-bg"></div>
     <div class="gradient-aux"></div>
     <div class="gradient-fixed"></div>
