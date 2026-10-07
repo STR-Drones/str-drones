@@ -1,10 +1,11 @@
 <template>
-  <div ref="card" class="process-card-wrapper py-(--sm) md:py-0 font-mono text-sm md:text-base text-gray-light max-w-[60ch]">
-    <div ref="icon" class="card-icon bg-gray-dark border border-gray"></div>
+  <div ref="card" class="process-card-wrapper py-(--sm) md:py-0 font-mono text-base text-gray-light max-w-[60ch]">
+    <div ref="icon" class="card-icon bg-gray-dark border border-gray">
+      <slot name="number"></slot>
+    </div>
     <div ref="content" class="flex flex-col card-content bg-gray-dark border border-gray md:min-h-[10em] p-(--sm)">
       <div class="flex gap-2">
-        <div class="bg-primary aspect-square h-[1.6em] flex items-center justify-center text-foreground"><slot name="number"></slot></div>
-        <div class="uppercase">
+      <div class="uppercase">
           <slot></slot>
         </div>
       </div>
@@ -36,6 +37,11 @@ onMounted(() => {
       //markers: true
     }
   })
+  tl.to(icon.value, {
+    y: -20,
+    opacity: 1,
+    duration: 0.2
+  })
   tl.to(content.value, {
     opacity: 1,
     duration: 0.1
@@ -44,31 +50,30 @@ onMounted(() => {
     y: -20,
     duration: .2
   })
-  tl.to(icon.value, {
-    y: -50,
-    opacity: 1
-  })
 })
 </script>
 
 <style lang="scss">
 .process-card-wrapper {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  grid-template-columns: 3em 2.5fr;
   gap: 4px;
 
   .card-icon {
-    aspect-ratio: 4/5;
-    transform: translateY(-20%);
+    aspect-ratio: 1;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-foreground);
   }
 
   .card-content, .card-icon {
     opacity: 0;
-    transform: translateY(-20);
   }
 
   &:nth-child(even) {
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 2.5fr 3em;
     margin-left: auto;
 
     .card-icon {

@@ -1,10 +1,10 @@
 <template>
   <div ref="hero" class="section-hero relative min-h-screen bg-background text-center flex flex-col justify-center items-center overflow-hidden">
-    <div class="text-group px-1 md:px-(--md) pt-0 pb-(--lg) z-4 absolute">
-      <glowing-h class="text-headline text-xl md:text-2xl leading-[1.1]">
+    <div class="text-group px-1 md:px-(--md) pt-0 pb-(--md) z-4 absolute">
+      <glowing-h class="text-headline text-hero leading-[1.1]">
         <slot></slot>
       </glowing-h>
-      <div class="text-secondary opacity-0 mt-(--sm) text-base md:text-lg max-w-[50ch] leading-[1.2] text-balance">
+      <div class="text-secondary mx-auto opacity-0 mt-(--md) text-lg max-w-[50ch] leading-[1.2] text-balance">
         <slot name="description"></slot>
       </div>
     </div>
