@@ -5,7 +5,7 @@
     </div>
     <div ref="content" class="flex flex-col card-content bg-gray-dark border border-gray md:min-h-[10em] p-(--sm)">
       <div class="flex gap-2">
-      <div class="uppercase">
+        <div class="uppercase">
           <slot></slot>
         </div>
       </div>
@@ -90,17 +90,7 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
 
-    .card-icon {
-      grid-row: 2;
-      max-width: 10rem;
       width: 100%;
-      margin: 0 auto;
-    }
-
-    .card-content {
-      grid-row: 1;
-    }
-
     .card-content, .card-icon {
       opacity: 0;
       transform: unset !important;

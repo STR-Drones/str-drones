@@ -42,6 +42,7 @@
   --max-width: 1600px;
   --nav-max-width: 1200px;
   --breakpoint-md: 54rem;
+  --breakpoint-xl: 88rem;
 }
 
 html {
