@@ -60,6 +60,15 @@ const videos = [
   { src: '/videos/stories/story-10.mp4', label: 'Story 8' },
   { src: '/videos/stories/story-9.mp4', label: 'Story 9' },
   { src: '/videos/stories/story-8.mp4', label: 'Story 10' },
+  { src: '/videos/stories/story-1.mp4', label: 'Story 1' },
+  { src: '/videos/stories/story-4.mp4', label: 'Story 2' },
+  { src: '/videos/stories/story-7.mp4', label: 'Story 3' },
+  { src: '/videos/stories/story-2.mp4', label: 'Story 4' },
+  { src: '/videos/stories/story-5.mp4', label: 'Story 5' },
+  { src: '/videos/stories/story-3.mp4', label: 'Story 7' },
+  { src: '/videos/stories/story-10.mp4', label: 'Story 8' },
+  { src: '/videos/stories/story-9.mp4', label: 'Story 9' },
+  { src: '/videos/stories/story-8.mp4', label: 'Story 10' },
 ]
 
 const openFullscreen = (video) => {
