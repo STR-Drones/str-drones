@@ -9,7 +9,7 @@
       </template>
     </marker-section>
     <div class="max-w-(--max-width) mx-auto">
-      <div class="md:flex mt-(--md) gap-(--md)">
+      <div class="md:flex mt-(--lg) gap-(--md)">
         <div class="text-hero leading-[0.9]">
           <slot></slot>
         </div>
@@ -17,7 +17,7 @@
           <slot name="description"></slot>
         </animated-p>
       </div>
-      <cells-svg class="mt-(--lg)" />
+      <cells-svg class="mt-(--xl)" />
       <error-card>
         <slot name="card-title"></slot>
         <template #body>
@@ -28,7 +28,7 @@
         </template>
       </error-card>
     </div>
-    </div>
+  </div>
 </template>
 
 <script setup>

@@ -5,6 +5,7 @@
         <div v-for="video in videos" :key="video.src" class="story" ref="stories">
           <div class="story-inner">
             <video
+              loading="lazy"
               :src="video.src"
               muted
               loop
@@ -28,6 +29,7 @@
         @click="closeFullscreen"
       >
         <video
+          loading="lazy"
           :key="activeVideo.src"
           :src="activeVideo.src"
           muted

@@ -43,7 +43,7 @@ onMounted(() => {
         trigger: '.trig',
         pin: meter.value, // pin the trigger element while active
         start: "top top", // when the top of the trigger hits the top of the viewport
-        end: "+=200%", 
+        end: "+=1600", 
         //markers: true,
         scrub: .2, 
       },
