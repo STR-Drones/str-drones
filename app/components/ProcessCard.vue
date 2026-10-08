@@ -85,11 +85,6 @@ onMounted(() => {
 
 @media (max-width: 52rem) {
   .process-card-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-
       width: 100%;
     .card-content, .card-icon {
       opacity: 0;

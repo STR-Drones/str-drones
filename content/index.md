@@ -46,13 +46,13 @@ POR QUÉ IMPORTA
 #description
 En España, cada año, un 5% de las placas solares instaladas fallan, lo que genera pérdidas de rentabilidad y riesgos de incendio que ponen en peligro toda la instalación. STR previene, identifica y diagnostica estos fallos.
 #card-title
-TEMPERATURA SUPERIOR A LA PERMITIDA (INVENT)
+TEMPERATURA SUPERIOR A LA PERMITIDA
 #card-body
 - DATOS DE LA PLACA
 - COORDENADAS 
 - 34.30N 35.20O
 #card-footer
-DIAGNÓSTICO: LO QUE SEA
+DIAGNÓSTICO: MULTICELL
 ::
 
 ::section-process
