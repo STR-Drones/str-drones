@@ -21,7 +21,7 @@
           <div class="flex flex-col gap-1">
             <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">CONTACTO</div>
             <a class="text-md link" href="tel:+34641147164">+34 641 147 164</a>
-            <a class="text-md link" href="mailto:ellop@str-drones.com">ellop@str-drones.com</a>
+            <a class="text-md link" href="mailto:hello@str-drones.com">hello@str-drones.com</a>
           </div>
           <div class="flex flex-col gap-1">
             <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">REDES</div>

@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-primary px-(--md) pt-26 text-foreground flex flex-col min-h-screen">
-    <div class="footer menu text-base font-mono tracking-wide uppercase grid grid-cols-3 underline">
+  <div class="bg-primary px-(--sm) md:px-(--md) pt-26 text-foreground flex flex-col min-h-screen">
+    <div class="footer menu text-base font-mono tracking-wide uppercase gap-2 flex flex-col md:grid grid-cols-3 underline">
       <div class="flex items-baseline gap-(--sm)">
         <div class="h-[1em] bg-foreground aspect-square"></div>
         <div class="flex flex-col">
@@ -20,11 +20,11 @@
         <div class="h-[1em] bg-foreground aspect-square"></div>
         <div class="flex flex-col">
           <a class="text-md link" target="_blank" href="tel:+34641147164">+34 641 147 164</a>
-          <a class="text-md link" target="_blank" href="mailto:ellop@str-drones.com">ellop@str-drones.com</a>
+          <a class="text-md link" target="_blank" href="mailto:hello@str-drones.com">hello@str-drones.com</a>
         </div>
       </div>
     </div>
-  <str-logo class="pt-(--lg) pb-(--md) mt-auto"/>
+  <str-logo class="pt-(--lg) pb-(--sm) md:pb-(--md) mt-auto"/>
   </div>
 </template>
 
