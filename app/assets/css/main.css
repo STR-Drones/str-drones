@@ -15,6 +15,12 @@
   --color-gray-dark: #090714;
   --color-black: #04020F;
 
+  --color-magenta: #CE32C7;
+  --color-purple: #5718AA;
+  --color-orange: #FF6D00;
+  --color-gold: #FFC300;
+  --color-red: #FF1E1E;
+
   --color-primary: var(--color-yellow);
   --color-background: var(--color-white);
   --color-foreground: var(--color-black);

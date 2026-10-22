@@ -91,10 +91,16 @@ El proceso
   Todo tu diagnóstico en un único panel: claro, navegable y accesible desde cualquier dispositivo. Así decides qué reparar primero.
   ::
 ::
+::section-maps
+#section-number
+04
+#section-title
+STR Maps
+::
 ::section-demo
 Pide una demo
 #section-number
-04
+05
 #section-title
 Te lo enseñamos
 #description
@@ -103,7 +109,7 @@ En menos de 24h te atenderemos para resolver cualquier duda y enseñarte como un
 ::section-us
 Somos un equipo familiar, apasionado de la tecnología y obsesionado con resolver tus problemas. 
 #section-number
-05
+06
 #section-title
 Nosotros
 ::

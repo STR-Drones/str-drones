@@ -11,12 +11,6 @@
     </div>
     <Transition name="nav">
       <div class="nav-expanded w-full max-w-(--nav-max-width) mx-auto bg-background border border-gray-light flex flex-col p-3" v-show="showNav" @click="showNav = false">
-        <!-- <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">WEB</div>
-        <div class="grid md:grid-cols-3 gap-3 w-full items-baseline mt-1 mb-8">
-          <a href="" class="text-lg link main-link">Blog</a>
-          <a href="" class="text-lg link main-link">Agricultura</a>
-          <a href="" class="text-lg link main-link">Construcción</a>
-        </div> -->
         <div class="grid md:grid-cols-3 gap-3 w-full items-baseline mt-2">
           <div class="flex flex-col gap-1">
             <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">CONTACTO</div>
@@ -31,8 +25,7 @@
           <div class="flex flex-col gap-1">
             <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">LEGAL</div>
             <nuxt-link to="terms-and-conditions" class="text-md link">Términos y condiciones generales</nuxt-link>
-            <nuxt-link to="terms-image-processing" class="text-md link">Procesado de imágenes</nuxt-link>
-            <nuxt-link to="terms-image-retrieval" class="text-md link">Recogida de imágenes</nuxt-link>
+            <nuxt-link to="terms-specific" class="text-md link">Términos y condiciones particulares</nuxt-link>
           </div>
         </div>
       </div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="alerts" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1066.65 799.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff0;
+        stroke: #ff0;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="554.5" y="404.99" width="29.5" height="29.5"/>
+  <path class="cls-2" d="m568.92,427.86c-.64,0-1.1-.13-1.36-.4-.27-.26-.4-.6-.4-1.01v-.5c0-.4.13-.74.4-1.01s.72-.4,1.36-.4,1.1.13,1.36.4.4.6.4,1.01v.5c0,.41-.13.74-.4,1.01-.27.27-.72.4-1.36.4Zm-.4-5.18l-.86-5.41v-4.26h2.52v4.26l-.86,5.41h-.8Z"/>
+</svg>

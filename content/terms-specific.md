@@ -1,0 +1,431 @@
+# Términos y condiciones particulares de inspección termográfica con dron y análisis en STR Maps
+
+STR DRONES, S.L. — Versión 2.
+
+Estos Términos y Condiciones Particulares (los «Términos») rigen la prestación, por parte de STR DRONES, SOCIEDAD LIMITADA, con NIF B22671697 y domicilio social en Cr. Font de Bonet, 1 Pta. 4, 46026 Valencia (Valencia), España (en adelante, «STR Drones» o el «Prestador»), de los servicios de inspección termográfica y RGB con dron, de procesamiento y análisis de las imágenes, de generación de informes y de acceso a la plataforma STR Maps (conjuntamente, los «Servicios») al cliente que los contrate (en adelante, el «Cliente»).
+
+Al aceptar la oferta comercial o cotización emitida por STR Drones (el «Pedido de Servicios»), el Cliente acepta quedar vinculado por estos Términos y por las Condiciones Generales de STR Drones (https://www.str-drones.eu/terms-and-conditions), que prevalecerán sobre cualquier disposición contradictoria contenida en órdenes de compra u otros documentos emitidos por el Cliente, salvo acuerdo expreso y por escrito en contrario.
+
+Estos Términos sustituyen a los anteriores «Términos y Condiciones Particulares para Inspección y Obtención de Imagen Térmica y RGB con Dron» y «Términos y Condiciones Particulares para Procesamiento de Imagen Térmica y RGB, Generación de Reportes y Uso de la Plataforma STR Maps», que quedan unificados en este documento.
+
+## 1. Objeto y modalidades del servicio
+
+El objeto de estos Términos es establecer las condiciones en que STR Drones presta los Servicios en la instalación o instalaciones fotovoltaicas descritas por el Cliente y cotizadas por STR Drones (cada una, una «Instalación»), en alguna de las siguientes modalidades:
+
+- **Servicio completo:** captura de las imágenes térmicas y RGB con dron por STR Drones, su procesamiento y análisis, la generación de informes y el acceso a STR Maps.
+- **Solo análisis:** procesamiento y análisis de imágenes captadas por el Cliente o por un tercero, generación de informes y acceso a STR Maps.
+
+Estos Términos se aplican a los Servicios de STR Drones en su modalidad de servicio gestionado (enterprise). No se aplican a las suscripciones de STR Maps como software en la nube (SaaS), en las que el Cliente realiza por sí mismo la captura y la carga de imágenes, que se rigen por sus condiciones específicas.
+
+## 2. Definiciones
+
+- **Lote:** conjunto de Instalaciones incluidas en una misma solicitud de oferta del Cliente, aunque se oferten en documentos separados (por ejemplo, una oferta por Instalación).
+- **Salida:** conjunto de Instalaciones de un Lote que STR Drones vuela en un mismo viaje.
+- **Ventana de vuelo:** periodo («volar desde» – «volar hasta») indicado por el Cliente dentro del cual debe realizarse el vuelo de cada Instalación.
+- **Fecha comprometida:** día concreto, o Ventana de vuelo de menos de cinco (5) días hábiles, fijados por el Cliente; o fecha impuesta por un organismo competente en la gestión de los permisos.
+- **Movilización:** salida del equipo de STR Drones (o de su subcontratista) hacia la Instalación.
+- **Gama de servicio:** resolución sobre el terreno (GSD) contratada: 3, 5 o 7 cm/px, según la Cláusula 4.
+- **Planificación prevista:** anexo que acompaña a la oferta y que indica el mes previsto de cada Salida.
+- **Calendario:** documento con las fechas de vuelo propuestas que STR Drones envía tras la adjudicación.
+- **Manual de operaciones:** documento de STR Drones con los parámetros técnicos de captura (equipo, altura, velocidad, solapes, orientación, irradiancia, organización de las imágenes), aplicable también a las imágenes que aporte el Cliente en la modalidad de solo análisis.
+- **Imágenes originales:** imágenes térmicas y RGB tal como se capturan en vuelo, con sus metadatos.
+- **Proyecto:** el análisis de una Instalación publicado en STR Maps tras una entrega.
+
+## 3. Documentos del contrato, prevalencia y versiones
+
+### 3.1. Documentos y orden de prevalencia
+
+El Pedido de Servicios está formado por: (i) la oferta aceptada, incluido el bloque de parámetros con los que se ha calculado el precio; (ii) el anexo «Planificación prevista», cuando la oferta lo cite; (iii) estos Términos; y (iv) las Condiciones Generales. En caso de contradicción, prevalecerán en ese orden.
+
+### 3.2. Versión aplicable de estos Términos
+
+STR Drones publica en su página web todas las versiones de estos Términos, cada una con su fecha de actualización. Cada oferta se rige, en todos sus aspectos, incluido el canon de almacenamiento de la Cláusula 15, por la última versión publicada en la fecha de emisión de la oferta o antes de ella. Por ejemplo, si existen versiones de 1 de julio y de 1 de septiembre, una oferta emitida el 29 de agosto se rige por la versión de 1 de julio.
+
+Las versiones publicadas después de la emisión de una oferta no se aplican a dicha oferta ni a su Pedido de Servicios, salvo que deriven de un cambio normativo de obligado cumplimiento.
+
+## 4. Gamas de servicio y norma IEC TS 62446-3
+
+### 4.1. Gamas de servicio
+
+El alcance de la inspección y del análisis depende de la Gama de servicio contratada, definida por su resolución térmica sobre el terreno (GSD):
+
+| | Exhaustivo · 3 cm/px | Mantenimiento · 5 cm/px | Rápido · 7 cm/px |
+|---|---|---|---|
+| Velocidad máxima de captura | 3 m/s | 7 m/s | 10 m/s |
+| Solape frontal / lateral mínimo | 70 % / 60 % | 70 % / 60 % | 70 % / 60 % |
+| Detección | Defectos a nivel de célula con la precisión exigida por la norma IEC TS 62446-3, y defectos a nivel de panel y de string (cadena de módulos). | Defectos a nivel de célula con menor precisión. Muy buena detección de patrones de defecto a nivel de panel y de string. Ideal para mantenimiento. | Diagnóstico rápido del rendimiento de los strings. Muy buena detección de defectos a nivel de string. |
+| Conformidad con la IEC TS 62446-3 | Solo con irradiancia mínima de 600 W/m² en el plano del módulo (Cláusula 4.2) | No aplica | No aplica |
+
+Lo que STR Drones garantiza es el GSD de la Gama de servicio. La altura de vuelo es la necesaria para obtener ese GSD con la cámara térmica empleada, y depende de su resolución y de su óptica; se fija para cada equipo en el Manual de operaciones.
+
+### 4.2. Conformidad con la norma IEC TS 62446-3
+
+El análisis aplica en todos los casos el procedimiento, la estructura de datos y los criterios de clasificación de anomalías de la norma IEC TS 62446-3. La conformidad con la norma exige, además, unas condiciones de captura: Gama de servicio de 3 cm/px e irradiancia mínima de 600 W/m² en el plano del módulo, junto con el resto de condiciones ambientales de la Cláusula 9.1.
+
+Cuando la captura se realiza en las condiciones acordadas con el Cliente sin alcanzar esos mínimos (otra Gama de servicio o una irradiancia mínima inferior), el informe mantiene la misma metodología, pero no constituye una inspección conforme a la norma, y la detección se limita a lo que permiten la resolución y la irradiancia de captura. Los informes se denominan «Informe con metodología IEC TS 62446-3» e indican expresamente si son conformes o no con la norma y, en su caso, las condiciones de captura que lo impiden.
+
+La irradiancia se determina a partir de los datos de la estación meteorológica más cercana disponible en Open-Meteo, fuente con trazabilidad y calibración. STR Drones no realiza mediciones de irradiancia en la Instalación salvo que la oferta lo indique expresamente.
+
+### 4.3. Alcance de la inspección
+
+Salvo que la oferta indique otro alcance, la inspección y el análisis cubren el cien por cien (100 %) de los módulos fotovoltaicos de la Instalación descrita por el Cliente y delimitada mediante el layout, plano, polígono o información facilitada por éste. El vuelo es un barrido de la superficie de módulos y no incluye inversores, centros de transformación, cableado ni subestaciones, salvo que la oferta lo indique expresamente.
+
+## 5. Precio y condiciones económicas
+
+### 5.1. Precio cerrado por Instalación
+
+El precio de cada Instalación es cerrado para los parámetros indicados en la oferta (ubicación, tipo de instalación, estructura, altura de cubierta, potencia, Gama de servicio, irradiancia mínima, plano CAD, condiciones de acceso y vuelo previsto). En la modalidad de servicio completo incluye la gestión de permisos, la planificación, el desplazamiento compartido de su Salida, el vuelo, el análisis, el acceso a STR Maps y las reprogramaciones que asume STR Drones conforme a la Cláusula 10. El Cliente garantiza la exactitud de los datos que facilita para el cálculo del precio.
+
+### 5.2. Variaciones indicadas en la oferta
+
+Cuando la oferta indique cómo varía el precio si cambian determinadas condiciones (por ejemplo, la entrega del plano CAD o la exigencia de una plataforma de coordinación de actividades empresariales, «CAE»), se aplicará la variación indicada en la oferta.
+
+### 5.3. Parámetros que difieren de la realidad
+
+- **Altura de cubierta.** La altura de vuelo es la necesaria para obtener el GSD de la Gama de servicio con la cámara térmica empleada (Cláusula 4.1) más la altura de la cubierta, y con ella se solicitan los permisos y se comprueban los límites de altura de las zonas del espacio aéreo. El Cliente declarará la altura máxima de cada cubierta con módulos. Si la altura real es mayor y los permisos solicitados dejan de ser válidos: (i) antes de la Movilización, STR Drones volverá a tramitarlos con la altura real, y el Cliente abonará la re-gestión y las condiciones adicionales que imponga el organismo, comunicadas previamente (Cláusula 10.5); si la Instalación deja de ser viable, abonará la gestión realizada; (ii) si se detecta en la Instalación, no se volará y se aplicará la Cláusula 10 como causa de acceso (fila g).
+- **Requisitos de acceso.** Si después de la oferta cambian los requisitos de acceso (nueva plataforma CAE, permiso de trabajo, formación o inducción, reconocimiento médico, acompañamiento, horario) y pueden cumplirse, se aplicará el suplemento indicado en la oferta o el que STR Drones comunique previamente y, si es necesario reprogramar, la fila h de la Cláusula 10.3. Si no pueden cumplirse, se aplicará la fila g y, en caso de cancelación, el Cliente abonará la gestión realizada.
+- **Resto de parámetros (estructura, eficiencia del panel, geometría, superficie):** STR Drones asume las desviaciones normales. El precio solo se revisará si la potencia o la superficie a inspeccionar supera en más de un diez por ciento (10 %) la indicada en la oferta. La revisión se comunicará antes del vuelo o, si se detecta en la Instalación, por correo electrónico en el momento.
+
+### 5.4. Precio calculado para la adjudicación conjunta
+
+Salvo que la oferta indique lo contrario, el precio de cada Instalación está calculado para la adjudicación conjunta de todas las Instalaciones del Lote: el desplazamiento se comparte entre las Instalaciones de cada Salida y el precio del análisis tiene en cuenta el volumen de potencia adjudicada por el Cliente en el año, incluido el propio Lote. En consecuencia:
+
+- Si el Cliente adjudica solo una parte del Lote, STR Drones podrá recalcular el precio de las Instalaciones adjudicadas antes de aceptar el Pedido de Servicios.
+- Si, una vez adjudicado, el Cliente cancela Instalaciones, STR Drones podrá revisar el precio de las restantes de la misma Salida y el del análisis, si se reduce el volumen anual.
+- Si una Instalación debe volarse fuera de su Salida por causas no imputables a STR Drones, se aplicará la Cláusula 10.7.
+
+### 5.5. Validez de la oferta y fecha de adjudicación
+
+La oferta es válida hasta la fecha de vencimiento indicada en ella. La planificación y los plazos de los permisos se cuentan desde la adjudicación y desde la recepción de la información necesaria (accesos, documentación CAE, contacto en la Instalación). Si la adjudicación se retrasa y algún vuelo debe pasar a otra Salida o a otro mes, podrán variar las fechas y, si cambia el reparto del desplazamiento, el precio.
+
+### 5.6. Gestión de permisos
+
+La oferta indica, para cada Instalación, el importe de la gestión de permisos prevista, incluida en el precio. Este importe sirve de base para:
+
+- **Gestión realizada:** el importe de la gestión de permisos indicado en la oferta, más el de los documentos no previstos que el Cliente haya aceptado (Cláusula 10.5). Se factura cuando una Instalación se cancela o deja de ser viable, por causas no imputables a STR Drones, después de iniciada la gestión.
+- **Re-gestión:** el cincuenta por ciento (50 %) del importe de la gestión de permisos indicado en la oferta. Corresponde a volver a solicitar los permisos o la coordinación para una nueva fecha.
+
+### 5.7. Importes de referencia de la oferta
+
+Las cantidades que el Cliente deba abonar por incidencias, esperas u horas adicionales conforme a estos Términos se calculan a partir de los importes de la oferta de cada Instalación:
+
+- **Precio de vuelo (PV):** el precio del concepto de vuelo de la Instalación indicado en la oferta.
+- **Importe de gestión de permisos:** el indicado en la oferta, base de la gestión realizada y de la re-gestión (Cláusula 5.6).
+- **Tarifa horaria de equipo en campo (TH):** la indicada en la oferta, aplicable a las esperas y a las horas adicionales.
+
+Los gastos no reembolsables (reservas que no puedan cancelarse) se repercuten a su coste justificado. Impuestos no incluidos.
+
+## 6. Planificación y calendario
+
+- Con la oferta, STR Drones entrega la Planificación prevista, que indica el mes previsto de cada Salida. Es orientativa.
+- Tras la adjudicación, STR Drones envía el Calendario con las fechas propuestas. El Cliente dispone de cinco (5) días hábiles para validarlo o proponer cambios dentro de su Ventana de vuelo. Transcurrido ese plazo sin respuesta, el Calendario se entenderá aceptado.
+- Dentro de la Ventana de vuelo, STR Drones podrá, sin coste para el Cliente, ajustar los horarios de vuelo, el orden de las Instalaciones y su reparto entre Salidas, respetando las Fechas comprometidas.
+- **Ventanas amplias.** Se recomienda indicar Ventanas de vuelo de al menos una semana. Con una Fecha comprometida por el Cliente, el riesgo de reprogramación por meteorología pasa a ser del Cliente (Cláusula 10.3, fila b).
+- **Cambios de ventana.** Si el Cliente modifica su Ventana de vuelo después de validar el Calendario, STR Drones replanificará la Instalación conforme a la Cláusula 10.3 (fila h) y, si debe volarse fuera de su Salida, a la Cláusula 10.7.
+- **Plazos de los organismos.** El inicio de las operaciones depende de los plazos de respuesta de los organismos competentes, que pueden ir de días a varios meses (Cláusula 7.3).
+
+## 7. Permisos de vuelo y cumplimiento normativo
+
+### 7.1. Capacitación y certificación del personal
+
+Todas las operaciones serán ejecutadas por pilotos de UAS titulados y con las certificaciones exigidas por la Agencia Estatal de Seguridad Aérea (AESA), o por la autoridad de aviación civil del país donde se ejecute el vuelo, para los escenarios operacionales de la inspección.
+
+### 7.2. Gestión de permisos y coordinaciones
+
+STR Drones asume la gestión de los permisos de vuelo y de las coordinaciones necesarias con el gestor del espacio aéreo, Defensa, aeródromos, zonas restringidas o de protección y autoridades ambientales. Cuando un organismo imponga una fecha, una franja horaria o condiciones de operación (comunicaciones por radio, observadores, coordinación previa), éstas obligarán a ambas Partes, y el Cliente garantizará el acceso a la Instalación en dicha fecha. STR Drones notificará al Cliente cualquier circunstancia que pueda retrasar la operativa.
+
+### 7.3. Espacios naturales y autoridad ambiental
+
+En las Zonas de Especial Protección para las Aves (ZEPA), la autorización de la autoridad ambiental autonómica puede requerir hasta tres (3) meses, con silencio negativo, y limitar las fechas de vuelo (por ejemplo, en épocas de cría). Las Instalaciones situadas en espacios naturales protegidos con plan de gestión propio o en Parques Nacionales no están incluidas en el precio salvo indicación expresa y se estudiarán de forma específica. La presencia de aves en la Instalación no impide el vuelo, que se realizará sin molestarlas; las limitaciones que imponga la autoridad ambiental se rigen por la Cláusula 10.5.
+
+### 7.4. Seguro de responsabilidad civil
+
+STR Drones mantiene en vigor una póliza de seguro de responsabilidad civil aeronáutica conforme al Reglamento (CE) 785/2004 y al Real Decreto 517/2024, o a la normativa equivalente del país de operación.
+
+### 7.5. Cumplimiento normativo y seguridad
+
+STR Drones opera conforme al Reglamento de Ejecución (UE) 2019/947, a la normativa nacional aplicable y a las limitaciones técnicas de la aeronave, primando siempre la seguridad operacional y el criterio del piloto.
+
+## 8. Responsabilidades del Cliente
+
+El incumplimiento de las siguientes responsabilidades se considerará causa imputable al Cliente a los efectos de la Cláusula 10:
+
+### 8.1. Información de la Instalación
+
+Facilitar la ubicación exacta (coordenadas o polígono), la altura máxima de cada cubierta, el layout de la Instalación y una persona de contacto en ella. La exactitud de esta información es responsabilidad del Cliente.
+
+### 8.2. Requisitos de acceso
+
+Comunicar, antes de la adjudicación, todos los requisitos de acceso a la Instalación: plataforma CAE, permiso de trabajo, documentación de prevención de riesgos laborales, formación o inducción, acompañamiento y horario de acceso. Cuando se exija una plataforma CAE, el Cliente o el titular de la Instalación validará la documentación de STR Drones con al menos dos (2) días hábiles de antelación al vuelo.
+
+### 8.3. Acceso y seguridad
+
+Proporcionar acceso completo, seguro y sin obstáculos a la Instalación en la fecha y hora acordadas, con una zona despejada y segura para el despegue y el aterrizaje. Cuando el despegue o el vuelo requieran acceder a una cubierta, el Cliente lo indicará y garantizará medios de acceso seguros (líneas de vida, accesos, superficie transitable); en caso contrario, STR Drones no accederá a la cubierta y la situación se tratará como falta de acceso.
+
+**Nota de seguridad:** los operadores de STR Drones no interactuarán con ningún material eléctrico de la Instalación bajo ninguna circunstancia. La apertura y el cierre de componentes eléctricos es responsabilidad exclusiva del Cliente.
+
+### 8.4. Operatividad de la Instalación y curtailment
+
+Asegurar que la Instalación esté operativa y vertiendo energía a la red, con una producción de al menos el treinta por ciento (30 %) de la corriente nominal en toda la zona a inspeccionar durante el periodo de vuelo, para evitar falsos positivos por strings en circuito abierto o seguidores sin energizar. Las zonas con inversores o strings apagados no se inspeccionarán, salvo acuerdo distinto.
+
+El Cliente informará de los mantenimientos, paradas y limitaciones de producción programados que coincidan con la Ventana de vuelo, y confirmará el día anterior al vuelo que la Instalación estará operativa y sin limitaciones de producción previstas. Cualquier limitación de producción o parada (curtailment), sea cual sea su origen, se rige por la Cláusula 10.6.
+
+### 8.5. Estado de los módulos
+
+Se recomienda que, si existe una limpieza de módulos programada, se realice antes de la inspección. Elementos externos (excrementos de aves, polvo denso, vegetación o sombras) pueden generar puntos calientes superficiales que no corresponden a fallos internos de las células; STR Drones no será responsable de dichas lecturas.
+
+### 8.6. Personal en la zona de vuelo
+
+Retirar al personal ajeno a la operación de la zona de vuelo en la medida necesaria para cumplir la normativa UAS, y facilitar al piloto la información de seguridad relevante (riesgos eléctricos, presencia de terceros, animales u obstáculos).
+
+## 9. Condiciones de vuelo
+
+### 9.1. Condiciones meteorológicas mínimas
+
+- **Irradiancia:** la mínima indicada en la oferta, en el plano del módulo (entre 300 y 600 W/m²). Si el Cliente exige después de la oferta el mínimo de 600 W/m² de la norma IEC TS 62446-3, STR Drones reprogramará los vuelos a fechas con irradiancia suficiente, lo que puede cambiar la Salida y el mes, y el precio se revisará conforme a la Cláusula 10.7.
+- **Viento:** velocidad máxima de 4 Beaufort (28 km/h).
+- **Nubosidad:** máximo de 2 octas de cielo cubierto por nubes cúmulos.
+
+Para asegurar el cumplimiento de estos mínimos, STR Drones podrá aplicar en la Instalación criterios de control más restrictivos (por ejemplo, comprobar la irradiancia en el plano horizontal). El piloto decide si el vuelo puede realizarse conforme a la normativa UAS y a las limitaciones de la aeronave; su criterio prevalece cuando esté en juego la seguridad o la calidad de las imágenes.
+
+## 10. Incidencias que impiden volar: régimen de costes
+
+### 10.1. Momento de la incidencia
+
+La fase de una incidencia se determina por el momento en que se notifica o se produce, respecto a la hora prevista de inicio del vuelo:
+
+| Fase | Situación |
+|---|---|
+| F0 | Antes de iniciar la gestión de permisos de la Instalación |
+| F1 | Permisos en trámite o concedidos, con cuarenta y ocho (48) horas o más de antelación y sin Movilización |
+| F2 | Menos de cuarenta y ocho (48) horas de antelación, sin Movilización |
+| F3 | Equipo movilizado (en ruta o en la Instalación) sin haber podido volar |
+| F4 | Vuelo iniciado e interrumpido |
+
+### 10.2. Conceptos
+
+- **RG (re-gestión)** y **GR (gestión realizada):** según la Cláusula 5.6.
+- **PV (precio de vuelo)** y **TH (tarifa horaria de equipo en campo):** según la Cláusula 5.7.
+- **GNR (gastos no reembolsables):** reservas que no puedan cancelarse, a su coste justificado.
+
+### 10.3. Reparto de costes
+
+La siguiente tabla indica lo que abona el Cliente en cada caso; el resto de costes los asume STR Drones.
+
+| Causa | F0 | F1 | F2 | F3 | F4 |
+|---|---|---|---|---|---|
+| a) Meteorología, con fecha elegida por STR Drones dentro de la Ventana de vuelo | — | — | — | — | — (se completa otro día) |
+| b) Meteorología, con Fecha comprometida por el Cliente | — | — | GNR | 35 % del PV | Lo volado + la vuelta para completar, como F3 |
+| c) Meteorología, con fecha impuesta por un organismo | — | 1.ª reprogramación de cada Instalación: nada. Desde la 2.ª: como b | Ídem | Ídem | Ídem |
+| d) NOTAM o restricción aeronáutica sobrevenida (activación de zonas, incendios y medios aéreos, eventos, emergencias, revocación de una coordinación) | — | RG | RG + GNR | RG + 25 % del PV | Lo volado + la parte pendiente, como F3 |
+| e) Denegación o requerimiento del organismo | Cl. 10.5 | Cl. 10.5 | Cl. 10.5 | No aplica: no se moviliza sin permiso | No aplica |
+| f) Instalación: curtailment, parada, producción inferior al 30 %, avería, limpieza | — | RG | RG + 15 % del PV | RG + 50 % del PV | Lo volado + el resto, como F3 |
+| g) Acceso: falta de acceso, CAE no validada a tiempo, permiso de trabajo no emitido, restricción no comunicada | — | RG | RG + 15 % del PV | RG + 50 % del PV | Lo volado + el resto, como F3 |
+| h) Cambio de fecha solicitado por el Cliente | — | RG | RG + 15 % del PV | RG + 50 % del PV | Lo volado + el resto, como F3 |
+| h) Cancelación solicitada por el Cliente | — | GR | GR + 15 % del PV | GR + 50 % del PV | Lo volado + GR |
+| i) Causas imputables a STR Drones (avería de la aeronave, indisponibilidad del piloto…) | — | — | — | — | — |
+
+En la fase F4 se factura la parte de la Instalación efectivamente volada y entregada; el resto se completa en otra jornada con el régimen indicado. Los porcentajes se aplican sobre el PV de cada Instalación afectada. Si una revocación de permisos se produce en el último momento, se aplica la fila d.
+
+### 10.4. Esperas en la Instalación
+
+Cuando el equipo deba esperar en la Instalación por causas imputables al Cliente, o por meteorología con Fecha comprometida por el Cliente, se facturará un mínimo de una (1) hora de espera (franquicia) a la TH y, a partir de ella, cada hora adicional a la TH, sin volver a computar la primera. Por ejemplo, una espera de veinte minutos se factura como una hora, y una de tres horas, como la hora de franquicia más dos horas a la TH. Las esperas y los alargamientos del vuelo por causas imputables a STR Drones no se facturan.
+
+### 10.5. Denegación, requerimientos y plazos de los organismos
+
+- Si un organismo deniega o requiere información por primera vez, STR Drones volverá a tramitar (otra fecha u otra forma de operar) a su cargo.
+- Si el organismo exige condiciones o documentos no incluidos en el precio (radiofonista, observadores, otra categoría de operación, estudios específicos), STR Drones comunicará su coste antes de realizarlos. Si el Cliente lo acepta, se ejecutarán y ese coste se sumará a la gestión realizada; si no lo acepta, la Instalación se cancelará y el Cliente abonará la gestión realizada.
+- Si el vuelo resulta no viable (denegación definitiva, prohibición o silencio negativo que agote la Ventana de vuelo), o se produce una segunda denegación en la misma Instalación, el Cliente podrá elegir entre trasladarlo a otra Ventana de vuelo (abonando la re-gestión) o cancelar la Instalación (abonando la gestión realizada).
+- Si la falta de viabilidad era detectable por STR Drones al emitir la oferta, el Cliente no abonará cantidad alguna.
+
+### 10.6. Curtailment y limitaciones de producción
+
+Las limitaciones de producción o paradas de la Instalación, ordenadas por el operador del sistema o la empresa distribuidora, o decididas por el titular, se consideran condiciones de operación de la Instalación y se rigen por la fila f, con independencia de su origen. Para reducir su impacto, el Cliente comunicará las consignas que conozca (por ejemplo, el programa del día siguiente) y STR Drones confirmará la operatividad con la Instalación el día anterior y la mañana del vuelo. En caso de limitación parcial, se volará la parte de la Instalación que cumpla la Cláusula 8.4 y el resto se reprogramará con el mismo régimen.
+
+### 10.7. Reprogramación y precio
+
+La Instalación afectada se reprogramará dentro de su Ventana de vuelo y, si no fuera posible, en la siguiente que acuerden las Partes. Si, por causas no imputables a STR Drones (filas b; c a partir de la segunda reprogramación; d; f; g y h), la Instalación debe volarse fuera de su Salida y su desplazamiento deja de compartirse, el precio del vuelo se revisará en consecuencia. En las filas a e i se mantiene el precio.
+
+### 10.8. Notificación de incidencias
+
+Las incidencias se notificarán por correo electrónico o por teléfono al contacto indicado en la oferta; la hora de la notificación determina la fase. STR Drones consulta los NOTAM y la previsión meteorológica el día anterior y antes de la Movilización.
+
+## 11. Ejecución del vuelo
+
+### 11.1. Equipo y captura
+
+Los vuelos se realizan con una aeronave DJI Mavic 3T o equivalente, con cámara térmica de al menos 640 × 512 píxeles, captura simultánea térmica y RGB y posicionamiento RTK, conforme al Manual de operaciones. La captura se realiza en barrido sobre la superficie de módulos, con la cámara en vertical y una orientación constante en toda la Instalación. Las Instalaciones de gran tamaño se vuelan en varias misiones y, si es necesario, en varias jornadas. El piloto toma además una imagen oblicua de la Instalación, que se utiliza como portada del informe.
+
+Cuando STR Drones emita una especificación de proyecto para un Cliente o una Instalación (con otro solape, Gama de servicio, velocidad o entregables), dicha especificación prevalecerá sobre los parámetros por defecto del Manual de operaciones.
+
+### 11.2. Calidad de los datos
+
+STR Drones realizará los vuelos necesarios hasta validar la idoneidad y calidad de las imágenes para su procesamiento, siempre que las condiciones de acceso y operatividad facilitadas por el Cliente sean las adecuadas.
+
+### 11.3. Horas adicionales
+
+Las horas de operativa adicionales solo se facturarán cuando se deban a causas imputables al Cliente (acceso restringido, Instalación no operativa, cambios de alcance solicitados en la Instalación), a la TH indicada en la oferta, previa comunicación al Cliente. Los alargamientos debidos a la aeronave, al criterio de seguridad del piloto o a la meteorología sobrevenida durante el vuelo los asume STR Drones.
+
+### 11.4. Subcontratación
+
+STR Drones podrá encargar la ejecución de los vuelos a operadores de UAS cualificados. STR Drones seguirá siendo el único responsable ante el Cliente del cumplimiento de estos Términos, en las mismas condiciones que si ejecutara el vuelo con medios propios. Los subcontratistas estarán sujetos a requisitos de certificación, seguro, seguridad y confidencialidad equivalentes a los de estos Términos, y las imágenes que capturen se rigen por la Cláusula 16.
+
+## 12. Operaciones fuera de España
+
+- **Normativa y permisos:** se aplicarán la normativa UAS y los permisos del país de operación (en la Unión Europea, el Reglamento de Ejecución (UE) 2019/947 y los requisitos nacionales; fuera de ella, la normativa y los registros locales), gestionados por STR Drones o por su operador local.
+- **Posicionamiento RTK:** fuera de España se utilizará una red de correcciones RTK local, pública o privada, o una base RTK propia.
+- **Logística:** el precio de la oferta incluye el desplazamiento y la logística (billetes, alquiler de vehículos, transporte del equipo y alojamiento), sin desglose. El transporte de la aeronave y de sus baterías de litio se realizará conforme a la normativa de mercancías peligrosas y, fuera de la Unión Europea, de aduanas.
+- **Cambios tras las reservas:** los gastos no reembolsables derivados de cambios solicitados por el Cliente una vez realizadas las reservas serán a su cargo, a su coste justificado.
+- **Incidencias:** se aplicará la Cláusula 10 con los mismos porcentajes, que ya incluyen el viaje al calcularse sobre el PV.
+- **Operativa local:** se tendrán en cuenta el idioma de la Instalación, los festivos locales y la normativa de prevención de riesgos laborales del país.
+
+## 13. Análisis de las imágenes
+
+### 13.1. Imágenes aportadas por el Cliente (solo análisis)
+
+Cuando las imágenes no hayan sido captadas por STR Drones, el análisis solo se iniciará una vez que STR Drones valide que cumplen el Manual de operaciones que se entrega al Cliente tras la recepción del Pedido de Servicios (solapes, orientación, paleta, posicionamiento RTK con metadatos intactos, organización de las imágenes e irradiancia mínima). Si no lo cumplen, STR Drones podrá no procesarlas hasta su corrección, sin responsabilidad ni penalización. La conformidad con la norma IEC TS 62446-3 dependerá de las condiciones de captura del tercero.
+
+El Cliente garantiza que dispone de los derechos necesarios sobre dichas imágenes y mantendrá indemne a STR Drones frente a reclamaciones de terceros derivadas de su uso.
+
+### 13.2. Plano CAD
+
+El precio del análisis depende de si el Cliente entrega el plano CAD de la Instalación, según lo indicado en la oferta. Se entiende por plano CAD un plano en formato DWG o DXF con la disposición real de los módulos, la numeración de strings e inversores y referencia de coordenadas. Si la oferta se emitió con plano CAD y éste no se entrega antes del vuelo (o, en solo análisis, junto con las imágenes), o no es utilizable, se aplicará el precio sin plano CAD indicado en la oferta.
+
+### 13.3. Contenido del análisis en STR Maps
+
+- Ortomosaico térmico y RGB.
+- Identificación de anomalías imagen a imagen y clasificación según su tipología y gradiente térmico.
+- Mapa interactivo con localizador eléctrico y geográfico de las anomalías y herramientas de gestión de activos.
+- Herramienta de escaneado de números de serie de los módulos.
+- Informe técnico de las anomalías detectadas y tabla de datos exportable con su ubicación geográfica y eléctrica y su gravedad.
+
+### 13.4. Plazo de entrega
+
+Una vez validadas la idoneidad y la calidad de las imágenes, los resultados se publicarán en STR Maps en un plazo de dos (2) a siete (7) días hábiles cuando la potencia validada en un mismo día no supere 60 MWp. Por encima de esa cifra, el plazo se amplía en un (1) día hábil por cada 20 MWp o fracción adicionales validados ese mismo día. El plazo se cuenta desde la confirmación por STR Drones de que las imágenes cumplen el Manual de operaciones.
+
+### 13.5. Penalización por retraso imputable a STR Drones
+
+Si STR Drones no entrega los resultados en el plazo de la Cláusula 13.4 por causas que le sean imputables, se aplicará una penalización del dos por ciento (2 %) del precio del análisis de las Instalaciones afectadas por cada semana completa de retraso, con un máximo acumulado del quince por ciento (15 %), mediante nota de crédito o deducción en factura. No se aplicará en caso de fuerza mayor, de retrasos imputables al Cliente o de lo previsto en la Cláusula 13.1.
+
+### 13.6. Garantía de calidad de los entregables
+
+Si el Cliente detecta un error técnico manifiesto en los entregables (clasificación incorrecta de anomalías, errores de identificación eléctrica o geográfica, omisión de módulos del área acordada), deberá notificarlo por escrito en un plazo máximo de diez (10) días hábiles desde la entrega, describiendo el error. STR Drones revisará y, en su caso, corregirá gratuitamente el informe o los datos afectados en un plazo máximo de cinco (5) días hábiles desde la notificación, sin perjuicio del resto de acciones del Cliente conforme a la Cláusula 17.
+
+## 14. Plataforma STR Maps: cuentas, roles y uso
+
+### 14.1. Cuentas
+
+El uso de STR Maps está incluido en el precio del análisis, sin cuotas adicionales. El Cliente podrá dar de alta, sin límite de número ni de rol, a las personas de su organización y de la organización de su cliente final (el titular de la Instalación). El acceso de personas ajenas a dichas organizaciones requerirá el consentimiento previo y por escrito de STR Drones.
+
+### 14.2. Roles
+
+La plataforma dispone de los roles «Owner» (propietario), «Admin» (administrador), «User» (usuario) y «Client» (cliente, solo consulta), cuyas funciones se describen en el manual de STR Maps vigente (https://docs.str-drones.eu/en/manual/roles/). El Owner y los Admin del Cliente son responsables de conceder y retirar los accesos de su organización y del uso que se haga de ellos.
+
+### 14.3. Licencia de uso
+
+STR Drones concede al Cliente una licencia de uso no exclusiva, no transferible y limitada a las cuentas activadas, para acceder a STR Maps y utilizarla con fines de gestión, mantenimiento y explotación de sus instalaciones fotovoltaicas, durante los plazos de la Cláusula 15.
+
+### 14.4. Credenciales y uso aceptable
+
+Las credenciales son personales e intransferibles. El Cliente custodiará las credenciales de sus cuentas, responderá de la actividad realizada con ellas y notificará sin demora cualquier uso no autorizado. El Cliente se compromete a no: (i) realizar ingeniería inversa, descompilar o intentar extraer el código fuente o los algoritmos de la plataforma; (ii) introducir código malicioso ni realizar actividades que puedan inhabilitar, sobrecargar o alterar su funcionamiento; (iii) extraer datos por medios automatizados sin permiso previo, ni acceder a datos para los que no tenga permiso; (iv) recabar o apropiarse de credenciales de acceso; (v) vender, licenciar o comprar datos obtenidos de la plataforma sin autorización; ni (vi) eludir las medidas técnicas de control de acceso. STR Drones se reserva todos sus derechos frente a la minería de textos y datos.
+
+### 14.5. Suspensión del acceso
+
+STR Drones podrá suspender el acceso de una o varias cuentas por incumplimiento de la Cláusula 14.4, por impago o por un riesgo de seguridad, notificándolo con la mayor antelación posible y restableciéndolo una vez subsanada la causa.
+
+### 14.6. Disponibilidad y evolución de la plataforma
+
+STR Drones empleará esfuerzos razonables para mantener STR Maps disponible de forma continua, sin garantizar una disponibilidad ininterrumpida, y podrá realizar mantenimientos programados, notificados con antelación razonable, e intervenciones de emergencia sin previo aviso. Salvo acuerdo de nivel de servicio por escrito, la indisponibilidad no dará lugar a compensaciones. STR Drones podrá mejorar o modificar las funcionalidades de la plataforma siempre que no limiten los derechos del Cliente.
+
+## 15. Conservación y almacenamiento de los datos
+
+### 15.1. Tipos de datos
+
+- **Tipo 1:** imágenes térmicas y RGB, planos y ortomosaicos.
+- **Tipo 2:** el resto de datos de los Proyectos (anomalías y su clasificación, ubicación eléctrica y geográfica, informes, tablas y números de serie).
+
+### 15.2. Datos de Tipo 2
+
+Los datos de Tipo 2 de todos los Proyectos del Cliente se mantienen en STR Maps mientras el Cliente contrate un nuevo Pedido de Servicios dentro de los doce (12) meses siguientes a la última entrega. Si transcurren doce (12) meses sin nuevas contrataciones, STR Drones avisará al Cliente de que en un (1) mes se eliminarán dichos datos, para que pueda descargar lo que necesite; transcurrido ese mes, se eliminarán. Los datos de Tipo 2 de un Proyecto no se eliminarán mientras se conserven sus datos de Tipo 1.
+
+### 15.3. Datos de Tipo 1
+
+- Se mantienen en el almacenamiento activo de STR Maps durante los doce (12) meses siguientes a la entrega del Proyecto, incluidos en el precio.
+- En el undécimo mes, STR Drones avisará al Cliente para que elija, para cada Proyecto: (1) mantenerlo en el almacenamiento activo, abonando un canon de tres euros (3 €) por GB y año; o (2) trasladarlo, sin coste, a un servidor de archivo de STR Drones, sin acceso del Cliente, durante doce (12) meses más. Si el Cliente no responde, se aplicará la opción (2).
+- Durante esos doce (12) meses de archivo, el Cliente podrá solicitar la recuperación de un Proyecto, que volverá al almacenamiento activo y quedará sujeto al canon desde la fecha de recuperación.
+- Transcurridos veinticuatro (24) meses desde la entrega, previo aviso con un (1) mes de antelación, se eliminarán los datos de Tipo 1 de los Proyectos que no se mantengan en el almacenamiento activo. Los Proyectos cuyo canon se abone cada año se conservarán sin fecha de eliminación.
+- El canon se factura una vez al año, al cierre del año natural, por los Proyectos con más de doce (12) meses que el Cliente haya decidido mantener en el almacenamiento activo, en proporción al tiempo que hayan permanecido en él durante ese año (por ejemplo, un Proyecto recuperado el 1 de julio abona medio año).
+- El Cliente comunicará qué Proyectos mantiene, traslada o descarta mediante correo electrónico dirigido a STR Drones o, cuando la funcionalidad esté disponible, desde la propia plataforma STR Maps.
+
+## 16. Propiedad de los datos, imágenes y entregables
+
+### 16.1. Imágenes originales
+
+Las Imágenes originales captadas por STR Drones o por sus subcontratistas son propiedad de STR Drones. El Cliente podrá solicitarlas gratuitamente a STR Drones, como muy tarde una (1) semana después de la entrega de los resultados del análisis; se entregarán fuera de la plataforma STR Maps. Con la entrega, STR Drones concede al Cliente una licencia gratuita, no exclusiva y perpetua para utilizarlas con cualquier fin, incluida su cesión a terceros, sin que ello limite los derechos de STR Drones sobre ellas.
+
+### 16.2. Informes, tablas y ortomosaicos descargados
+
+Los informes, las tablas de datos y los ortomosaicos que el Cliente descargue de STR Maps pasarán a ser de su propiedad desde su descarga, y podrá utilizarlos sin restricción para cualquier fin relacionado con la gestión, el mantenimiento o la explotación de sus instalaciones fotovoltaicas.
+
+### 16.3. Titularidad de STR Drones
+
+Los modelos, algoritmos, software y demás materiales de STR Drones, así como los contenidos de STR Maps no descargados, son y seguirán siendo de su propiedad exclusiva, sin perjuicio de las licencias concedidas en estos Términos. Queda prohibida la reventa o redistribución del acceso a los Servicios a terceros, salvo lo previsto en la Cláusula 14.1.
+
+### 16.4. Entrenamiento de algoritmos
+
+STR Drones podrá utilizar los datos, metadatos e imágenes obtenidos en los Servicios para entrenar, desarrollar y mejorar sus algoritmos de visión artificial y sistemas de inteligencia artificial de detección de anomalías, de forma anonimizada o disociada, sin identificar al Cliente ni permitir asociar los datos a una Instalación concreta frente a terceros, también después de la eliminación de los datos conforme a la Cláusula 15.
+
+## 17. Responsabilidad, seguros e indemnización
+
+### 17.1. Limitación de responsabilidad
+
+La responsabilidad total acumulada de STR Drones frente al Cliente por cualquier reclamación derivada de los Servicios estará limitada al importe efectivamente cobrado por el Pedido de Servicios que hubiera dado lugar a la reclamación. STR Drones no será responsable de daños indirectos, lucro cesante, pérdida de producción o de ingresos, ni de las decisiones adoptadas por el Cliente con base en los resultados, sin perjuicio de la responsabilidad por dolo o negligencia grave conforme a la legislación aplicable.
+
+### 17.2. Limitaciones propias de la tecnología
+
+La inspección termográfica y RGB tiene limitaciones técnicas inherentes (anomalías no visibles térmicamente en el momento de la captura, condiciones ambientales que afecten a la lectura, defectos no detectables con estos métodos, límites propios de la Gama de servicio contratada). STR Drones no garantiza la detección del cien por cien de las anomalías, sin perjuicio de su obligación de prestar los Servicios conforme a las Cláusulas 4 y 13.
+
+### 17.3. Seguros
+
+STR Drones mantendrá durante la prestación de los Servicios, al menos: (i) un seguro de responsabilidad civil aeronáutica conforme a la normativa del país de operación; y (ii) un seguro de responsabilidad civil general con una cobertura mínima de 500.000 € por siniestro. Los subcontratistas mantendrán sus propias pólizas de responsabilidad civil aeronáutica, cuya vigencia verificará STR Drones antes de cada operativa.
+
+### 17.4. Indemnización por el Cliente
+
+El Cliente mantendrá indemne a STR Drones frente a cualquier reclamación, daño o coste derivado de: (i) información incorrecta, incompleta o desactualizada sobre la Instalación, su acceso o sus condiciones de seguridad; (ii) el incumplimiento de la Cláusula 8; (iii) daños a los operadores, la aeronave o los equipos causados por riesgos de la Instalación no advertidos; (iv) el uso indebido de STR Maps contrario a la Cláusula 14; o (v) las imágenes aportadas por el Cliente conforme a la Cláusula 13.1.
+
+## 18. Confidencialidad
+
+Cada Parte mantendrá la más estricta confidencialidad sobre la información comercial, técnica y operativa de la otra a la que tenga acceso con motivo de los Servicios (la «Información Confidencial»), y no la divulgará a terceros sin consentimiento previo y por escrito, salvo a sus empleados, asesores o subcontratistas que necesiten conocerla y estén sujetos a obligaciones equivalentes. Esta obligación se mantendrá durante la relación y dos (2) años después de su finalización. No es Información Confidencial la que: (i) sea o pase a ser de dominio público sin incumplimiento de estos Términos; (ii) fuera conocida previamente por la Parte receptora; (iii) sea desarrollada independientemente sin utilizar la Información Confidencial; o (iv) deba divulgarse por imperativo legal o resolución judicial o administrativa.
+
+## 19. Protección de datos personales
+
+Las imágenes pueden captar incidentalmente a personas presentes en la Instalación. El Cliente informará a dicho personal de la realización de la inspección cuando lo exija la normativa. STR Drones tratará esa información y los datos de las cuentas de usuario (nombre, correo electrónico y registros) solo para prestar los Servicios y gestionar el acceso a STR Maps, conforme a la normativa de protección de datos aplicable, y podrá apoyarse en proveedores de infraestructura en la nube como encargados del tratamiento, con un nivel de protección equivalente. Cuando sea necesario, las Partes suscribirán el correspondiente acuerdo de encargo del tratamiento.
+
+Los interesados podrán ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación u oposición dirigiéndose a la dirección de contacto que STR Drones habilite a tal efecto. Los datos se conservarán conforme a la Cláusula 15.
+
+## 20. Fuerza mayor
+
+Ninguna de las Partes será responsable del incumplimiento o retraso de sus obligaciones por circunstancias de fuerza mayor imprevisibles, irresistibles y ajenas a su control razonable, como catástrofes naturales, estados de emergencia declarados, cambios normativos sobrevenidos, fallos generalizados de las infraestructuras de internet o de los proveedores de alojamiento en la nube, o ciberataques de terceros. La meteorología, los NOTAM y restricciones aeronáuticas, la denegación de permisos y las limitaciones de producción de la Instalación se rigen por la Cláusula 10 y no por esta cláusula.
+
+La Parte afectada lo notificará por escrito lo antes posible, indicando la naturaleza del evento, su duración estimada y sus efectos. Si el evento se prolonga más de treinta (30) días naturales continuados, cualquiera de las Partes podrá resolver el Pedido de Servicios afectado sin indemnización, facturando STR Drones únicamente los trabajos ejecutados.
+
+## 21. Modificaciones de alcance
+
+Cualquier modificación del alcance de un Pedido de Servicios aceptado (Gama de servicio, superficie, Instalaciones o calendario) se formalizará por escrito antes de su ejecución, con la propuesta de precio y plazo que STR Drones facilite. Mientras no exista acuerdo escrito, STR Drones ejecutará el alcance original.
+
+## 22. Resolución y efectos
+
+Cualquiera de las Partes podrá resolver el Pedido de Servicios por incumplimiento de las obligaciones esenciales de la otra no subsanado en quince (15) días hábiles desde el requerimiento. Tras la resolución o extinción por cualquier causa: (i) serán exigibles las cantidades pendientes por trabajos ejecutados; (ii) se mantendrán las obligaciones de confidencialidad y los derechos de propiedad de STR Drones; y (iii) STR Drones podrá desactivar los accesos a STR Maps correspondientes a Pedidos de Servicios no pagados, sin perjuicio de los plazos de conservación de la Cláusula 15.
+
+## 23. Ley aplicable y jurisdicción
+
+Estos Términos se rigen por el derecho español. Para cualquier controversia sobre su interpretación, ejecución o cumplimiento, las Partes, con renuncia a su propio fuero, se someten a los Juzgados y Tribunales de la ciudad de Valencia (España), sin perjuicio de las normas imperativas de protección que resulten aplicables según la naturaleza del Cliente.
+
+## 24. Disposiciones generales
+
+- **Integridad del acuerdo:** estos Términos, junto con los documentos de la Cláusula 3.1, constituyen el acuerdo completo entre las Partes sobre los Servicios y sustituyen a cualquier acuerdo previo sobre la misma materia.
+- **Independencia de las Partes:** nada en estos Términos crea una relación de agencia, sociedad, empresa conjunta ni laboral entre las Partes.
+- **Divisibilidad:** la nulidad de una disposición no afectará a las restantes.
+- **Renuncia:** la falta o el retraso en el ejercicio de un derecho no supone renuncia a él.
+- **Notificaciones:** se realizarán preferentemente por correo electrónico con acuse de recibo, a las direcciones de contacto indicadas en la oferta o en el Pedido de Servicios.
+- **Idioma:** estos Términos se redactan en español, que prevalecerá sobre cualquier traducción.

@@ -1,3 +1,24 @@
 {
-  "welcome": "Welcome"
+  "welcome": "Welcome",
+  "maps": {
+    "inspection": "Inspection Status",
+    "completed": "Completed",
+    "anomalies": "Anomalies Detected",
+    "thermal": "Thermal Image",
+    "anomalyType": "Anomaly Type",
+    "selectAnomaly": "Select an anomaly to view its thermal image",
+    "anomalyTypes": {
+      "cell": "Cell",
+      "multicell": "Multi-Cell",
+      "module": "Module",
+      "diode": "Diode",
+      "polarity": "Polarity"
+    },
+    "hotspot": "Module Hotspot",
+    "report": "IEC Compliance Report",
+    "selectAll": "Select all anomalies",
+    "comparisonSlider": "RGB and thermal image comparison slider",
+    "showThermal": "Show thermal",
+    "showRgb": "Show RGB"
+  }
 }

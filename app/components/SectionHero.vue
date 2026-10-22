@@ -1,5 +1,5 @@
 <template>
-  <div ref="hero" class="section-hero relative min-h-screen bg-background text-center flex flex-col justify-center items-center overflow-hidden">
+  <div ref="hero" class="section-hero relative min-h-dvh bg-background text-center flex flex-col justify-center items-center overflow-hidden">
     <div class="text-group px-1 md:px-(--md) pt-0 pb-(--md) z-4 absolute">
       <glowing-h class="text-headline text-hero leading-[1.1]">
         <slot></slot>

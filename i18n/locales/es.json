@@ -1,3 +1,36 @@
 {
-  "welcome": "Bienvenido"
+  "home": {
+    "welcome": "Bienvenido"
+  },
+  "maps": {
+    "inspection": "Estado de la inspección",
+    "completed": "Completada",
+    "anomalies": "Anomalías detectadas",
+    "thermal": "Imagen térmica",
+    "anomalyType" : "Tipo de anomalía",
+    "anomalyTypes" : {
+      "cell": "Cell",
+      "multicell": "Multi-Cell",
+      "module": "Module",
+      "diode": "Diode",
+      "polarity": "Polarity"
+    },
+    "form": {
+      "title": "Formulario de contacto",
+      "cta": "Rellena el formulario →",
+      "mailto": "Si lo prefieres, puedes escribir a hello{'@'}str-drones.eu",
+      "description": "Si quieres que nos pongamos en contacto contigo, rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar"
+    },
+    "selectAnomaly": "Seleccionar una anomalía para ver su imagen térmica",
+    "hotspot": "Punto caliente del módulo",
+    "report": "Informe de cumplimiento IEC",
+    "selectAll": "Seleccionar todas las anomalías",
+    "comparisonSlider": "Deslizador de comparación RGB e imagen térmica",
+    "showThermal": "Ver térmica",
+    "showRgb": "Ver RGB"
+  }
 }
