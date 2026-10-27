@@ -1,10 +1,10 @@
 ---
-title: "Del vuelo al diagnóstico: cada dato en su sitio"
-description: "Una inspección útil conecta la captura aérea con un diagnóstico claro, trazable y listo para ayudar a decidir qué revisar primero."
-date: "2026-09-24"
-category: "Operación y mantenimiento"
-cover: "/images/blog/cell.jpg"
-coverAlt: "Detalle térmico de un módulo solar durante una inspección"
+title: 'Del vuelo al diagnóstico: cada dato en su sitio'
+category: Operación y mantenimiento
+cover: /images/blog/cell.jpg
+coverAlt: Detalle térmico de un módulo solar durante una inspección
+date: '2026-09-24'
+description: Una inspección útil conecta la captura aérea con un diagnóstico claro, trazable y listo para ayudar a decidir qué revisar primero.
 ---
 
 ## La inspección no termina al aterrizar

@@ -20,7 +20,15 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: ['@nuxt/content', '@nuxtjs/i18n'],
+  modules: ['@nuxt/content', '@nuxtjs/i18n', 'nuxt-studio'],
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'lecarles',
+      repo: 'str-drones',
+      branch: 'main',
+    },
+  },
   content: {
     experimental: {
       sqliteConnector: 'native'
