@@ -1,5 +1,21 @@
 {
   "welcome": "Welcome",
+  "blog": {
+    "eyebrow": "STR / FIELD NOTES",
+    "intro": "Technology, solar energy, and what we see from the air. Stories and insights from the STR team.",
+    "latestPosts": "LATEST ARTICLES",
+    "articleCount": "ARTICLES",
+    "readArticle": "READ ARTICLE",
+    "readArticleLabel": "Read: {title}",
+    "emptyState": "We’re preparing new stories. Check back soon.",
+    "footerTagline": "CLEAR DATA. BETTER DECISIONS.",
+    "followLinkedIn": "Follow us on LinkedIn",
+    "seoTitle": "Blog | STR Drones",
+    "seoDescription": "Stories, technology, and insights from the STR Drones team.",
+    "backToBlog": "BACK TO BLOG",
+    "backToAllPosts": "BACK TO ALL ARTICLES",
+    "articleNotFound": "Article not found"
+  },
   "maps": {
     "inspection": "Inspection Status",
     "completed": "Completed",

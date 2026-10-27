@@ -33,6 +33,7 @@
   --text-xl: calc(var(--font-size-base) * 1.6); 
   --text-2xl: calc(var(--font-size-base) * 2.75); 
   --text-3xl: calc(var(--font-size-base) * 4);
+  --text-4xl: calc(var(--font-size-base) * 6.5);
   --text-hero: clamp(2rem, 2rem + 4.5vw, 15rem);
 
   --xs: calc(var(--spacing) * 2);
