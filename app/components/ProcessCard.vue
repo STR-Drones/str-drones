@@ -3,7 +3,7 @@
     <div ref="icon" class="card-icon bg-gray-dark border border-gray">
       <slot name="number"></slot>
     </div>
-    <div ref="content" class="flex flex-col card-content bg-gray-dark border border-gray md:min-h-[10em] p-(--sm)">
+    <div ref="content" class="flex flex-col card-content bg-gray-dark border border-gray md:min-h-[10em] p-(--sm) max-w-[42ch]">
       <div class="flex gap-2">
         <div class="uppercase">
           <slot></slot>

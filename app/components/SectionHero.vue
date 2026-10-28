@@ -12,7 +12,15 @@
       <div class="bg-gray-light p-2 mb-2"><spinning-logo-hero></spinning-logo-hero></div>
       <div class="bg-gray-light tracking-wider uppercase font-mono p-1 leading-[1.1] text-sm">SCROLL</div>
     </div>
-    <img src="@/assets/placa-bg.jpg" class="absolute z-1 inset-0 w-full h-screen object-cover"/>
+    <NuxtImg
+      src="/images/placa-bg.jpg"
+      class="absolute z-1 inset-0 w-full h-screen object-cover"
+      width="1900"
+      height="1069"
+      sizes="320px sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw"
+      preload
+      alt=""
+    />
     <div class="gradient-bg"></div>
     <div class="gradient-aux"></div>
     <div class="gradient-fixed"></div>

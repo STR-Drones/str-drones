@@ -4,13 +4,17 @@
       <nuxt-link class="mr-auto" to="/"><str-logo-animated /></nuxt-link>
       <a href="https://maps.str-drones.eu" target="_blank" class="bg-yellow flex leading-[1.1] h-[2em] px-3 py-2 items-center tracking-wide uppercase">STR Maps</a>
       <button @click="toggleNav" :class="['toggle flex items-center justify-center aspect-square h-[2em] p-2 bg-gray-light text-foreground', showNav ? 'open' : '' ]">
-        <svg class="w-full stroke-current stroke-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.74 47.74">
+        <svg class="w-full stroke-current stroke-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.74 47.74">
           <line class="cls-1" y1="23.87" x2="47.74" y2="23.87"/><line class="cls-1" x1="23.87" y1="47.74" x2="23.87"/>
         </svg>
       </button>
     </div>
     <Transition name="nav">
       <div class="nav-expanded w-full max-w-(--nav-max-width) mx-auto bg-background border border-gray-light flex flex-col p-3" v-show="showNav" @click="showNav = false">
+        <div class="menu-main text-md py-(--sm) flex flex-col gap-1">
+          <nuxt-link class="link text-lg" to="/blog">Blog</nuxt-link>
+          <nuxt-link class="link text-lg" to="/thermal-flight-configuration-dji">Configuración de vuelo térmico (DJI)</nuxt-link>
+        </div>
         <div class="grid md:grid-cols-3 gap-3 w-full items-baseline mt-2">
           <div class="flex flex-col gap-1">
             <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">CONTACTO</div>

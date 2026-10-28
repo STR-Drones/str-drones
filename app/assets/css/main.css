@@ -43,7 +43,7 @@
   --xl: calc(var(--spacing) * 32);
   --2xl: calc(var(--spacing) * 64);
 
-  --spacing: .2rem;
+  --spacing: .25rem;
   --nav-height: calc(var(--text-md) * 0.9 + var(--sm) * 2);
   --footer-height: calc(var(--text-md) * 0.9 + var(--sm) * 2);
   --max-width: 1600px;

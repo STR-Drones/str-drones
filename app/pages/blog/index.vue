@@ -1,5 +1,5 @@
 <template>
-  <main class="blog-index">
+  <main class="blog-index px-(--sm) md:px-(--md)">
     <header class="blog-heading">
       <p class="eyebrow"><span class="eyebrow-mark" /> {{ t('blog.eyebrow') }}</p>
       <h1 class="text-3xl leading-tight mt-2">Blog</h1>
@@ -16,7 +16,13 @@
         <article v-for="(post, index) in posts" :key="post.path" class="post-card">
           <NuxtLink class="post-link" :to="post.path" :aria-label="t('blog.readArticleLabel', { title: post.title })">
             <div class="post-image">
-              <img :src="post.cover" :alt="post.coverAlt" loading="lazy">
+              <NuxtImg
+                :src="post.cover"
+                :alt="post.coverAlt"
+                :provider="post.cover.startsWith('/') ? 'ipx' : 'none'"
+                sizes="320px sm:50vw lg:33vw"
+                loading="lazy"
+              />
               <span class="image-index"><time :datetime="post.date">{{ formatDate(post.date) }}</time></span>
             </div>
             <h3 class="pt-(--md)">{{ post.title }}</h3>
@@ -44,6 +50,11 @@ const { data: posts } = await useAsyncData('blog-posts', () =>
 useSeoMeta({
   title: () => t('blog.seoTitle'),
   description: () => t('blog.seoDescription'),
+  ogTitle: () => t('blog.seoTitle'),
+  ogDescription: () => t('blog.seoDescription'),
+  ogType: 'website',
+  twitterTitle: () => t('blog.seoTitle'),
+  twitterDescription: () => t('blog.seoDescription'),
 })
 
 const formatDate = (date: string) =>
@@ -55,7 +66,7 @@ const formatDate = (date: string) =>
 .blog-index {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: calc(var(--nav-height) + var(--lg)) var(--sm) var(--lg);
+  padding-top: calc(var(--nav-height) + var(--lg));
 }
 
 .blog-heading {

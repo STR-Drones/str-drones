@@ -1,5 +1,9 @@
 {
   "welcome": "Welcome",
+  "home": {
+    "seoTitle": "Solar inspections with drones",
+    "seoDescription": "Drone and thermal inspections for solar plants to detect faults and improve performance."
+  },
   "blog": {
     "eyebrow": "STR / FIELD NOTES",
     "intro": "Technology, solar energy, and what we see from the air. Stories and insights from the STR team.",
@@ -10,7 +14,7 @@
     "emptyState": "We’re preparing new stories. Check back soon.",
     "footerTagline": "CLEAR DATA. BETTER DECISIONS.",
     "followLinkedIn": "Follow us on LinkedIn",
-    "seoTitle": "Blog | STR Drones",
+    "seoTitle": "Blog",
     "seoDescription": "Stories, technology, and insights from the STR Drones team.",
     "backToBlog": "BACK TO BLOG",
     "backToAllPosts": "BACK TO ALL ARTICLES",

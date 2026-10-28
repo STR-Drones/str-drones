@@ -7,7 +7,12 @@
     </header>
 
     <figure class="post-cover pt-(--md)">
-      <img :src="post.cover" :alt="post.coverAlt">
+      <NuxtImg
+        :src="post.cover"
+        :alt="post.coverAlt"
+        :provider="post.cover.startsWith('/') ? 'ipx' : 'none'"
+        sizes="320px sm:100vw md:80vw"
+      />
       <figcaption class="text-gray/50">{{ post.coverAlt }}</figcaption>
     </figure>
 
@@ -34,8 +39,17 @@ if (!post.value) {
 }
 
 useSeoMeta({
-  title: () => `${post.value?.title ?? t('blog.seoTitle')} | STR Drones`,
+  title: () => post.value?.title ?? t('blog.seoTitle'),
   description: () => post.value?.description,
+  ogTitle: () => post.value?.title,
+  ogDescription: () => post.value?.description,
+  ogImage: () => post.value?.cover,
+  ogImageAlt: () => post.value?.coverAlt,
+  ogType: 'article',
+  twitterTitle: () => post.value?.title,
+  twitterDescription: () => post.value?.description,
+  twitterImage: () => post.value?.cover,
+  twitterImageAlt: () => post.value?.coverAlt,
 })
 
 const formatDate = (date: string) =>

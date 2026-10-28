@@ -14,13 +14,49 @@ export default defineNuxtConfig({
       ]
     }
   },
+  site: {
+    url: 'https://www.str-drones.eu',
+    name: 'STR Drones',
+    description: 'Inspección de plantas solares con drones y termografía para detectar averías y mejorar el rendimiento.',
+    defaultLocale: 'es',
+    trailingSlash: false,
+  },
+  seo: {
+    fallbackTitle: 'Inspección solar con drones',
+    meta: {
+      description: 'Inspección de plantas solares con drones y termografía para detectar averías y mejorar el rendimiento.',
+      author: 'STR Drones',
+      ogTitle: 'STR Drones',
+      ogDescription: 'Inspección de plantas solares con drones y termografía para detectar averías y mejorar el rendimiento.',
+      ogImage: '/images/blog/solar-map.png',
+      ogImageAlt: 'Mapa de una instalación solar inspeccionada por STR Drones',
+      twitterCard: 'summary_large_image',
+      twitterImage: '/images/blog/solar-map.png',
+      twitterImageAlt: 'Mapa de una instalación solar inspeccionada por STR Drones',
+    },
+  },
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'STR Drones',
+      url: 'https://www.str-drones.eu',
+      logo: '/apple-touch-icon.png',
+      sameAs: [
+        'https://www.instagram.com/str.drones/',
+        'https://es.linkedin.com/company/str-drones',
+      ],
+    },
+  },
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
-  modules: ['@nuxt/content', '@nuxtjs/i18n', 'nuxt-studio'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/seo', '@nuxt/content', '@nuxt/image', 'nuxt-studio'],
+  image: {
+    quality: 80,
+  },
   studio: {
     repository: {
       provider: 'github',
@@ -37,8 +73,8 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'es',
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'es', name: 'Español', file: 'es.json' }
+      { code: 'en', name: 'English', language: 'en-GB', file: 'en.json' },
+      { code: 'es', name: 'Español', language: 'es-ES', file: 'es.json' }
     ]
   }
 })

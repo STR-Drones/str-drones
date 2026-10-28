@@ -2,6 +2,7 @@
   <div class="slug-page w-full text-base mx-auto p-(--md)">
     <ContentRenderer v-if="page" :value="page" />
   </div>
+  <section-footer />
 </template>
 
 <script lang="ts" setup>
@@ -12,12 +13,38 @@ const { data: page } = await useAsyncData(
   () => `content-${path.value}`,
   () => queryCollection('content').path(path.value).first()
 )
+
+useSeoMeta({
+  title: () => page.value?.title ?? 'STR Drones',
+  description: () => page.value?.description,
+  ogTitle: () => page.value?.title,
+  ogDescription: () => page.value?.description,
+  twitterTitle: () => page.value?.title,
+  twitterDescription: () => page.value?.description,
+})
 </script>
 
 <style lang="scss">
 .slug-page {
   max-width: 80ch;
   padding: calc(var(--nav-height) + var(--md)) var(--sm);
+
+  ul {
+    list-style: disc;
+    padding-left: var(--md);
+    margin-top: var(--md);
+  }
+
+  ul ul {
+    list-style: circle;
+    margin-top: 0;
+    margin-bottom: var(--xs);
+  }
+
+  ol {
+    list-style: decimal;
+    padding-left: var(--md);
+  }
 
   tr {
     border-bottom: 1px solid var(--color-foreground);
@@ -53,6 +80,31 @@ const { data: page } = await useAsyncData(
     line-height: 1;
     padding-top: var(--md);
     text-wrap: balance;
+  }
+
+  figure {
+    margin: var(--md) 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    padding-top: var(--xs);
+    font-size: var(--text-sm);
+  }
+
+  .figure-images {
+    display: flex;
+    gap: var(--sm);
+    align-items: flex-start;
+
+    img {
+      width: calc(50% - var(--xs));
+    }
   }
 }
 </style>

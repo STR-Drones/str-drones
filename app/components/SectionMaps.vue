@@ -8,45 +8,49 @@
         <slot name="section-number"></slot>
       </template>
     </marker-section>
-    <div class="relative z-3 maps grid items-center justify-center md:grid-cols-[1.33fr_1fr] gap-4 max-w-(--max-width) m-auto pt-20 pb-50">
+    <div class="relative z-3 maps grid items-center justify-center md:grid-cols-[1.33fr_1fr] gap-4 max-w-(--max-width) m-auto pt-20 pb-30">
       <div>
         <div class="relative">
           <div
+            ref="imageComparison"
             class="image image-comparison relative aspect-[4/3] select-none overflow-hidden touch-none"
             @pointerdown="startComparisonDrag"
             @pointermove="moveComparisonDrag"
             @pointerup="stopComparisonDrag"
             @pointercancel="stopComparisonDrag"
           >
-            <img
+            <NuxtImg
               :src="selectedAnomaly.img"
               :alt="`${selectedAnomaly.type} anomaly in the RGB inspection image`"
               class="absolute inset-0 h-full w-full object-cover pointer-events-none"
-            >
+              sizes="320px sm:100vw md:60vw"
+            />
             <div
               class="absolute inset-0 overflow-hidden"
               :class="!isDragging && 'transition-[clip-path] duration-500 motion-reduce:transition-none'"
               :style="{ clipPath: `inset(0 ${100 - comparisonPosition}% 0 0)` }"
             >
-              <img
+              <NuxtImg
                 :src="selectedAnomaly.thermalImg"
                 :alt="`${selectedAnomaly.type} anomaly in the thermal inspection image`"
                 class="pointer-events-none absolute inset-0 h-full w-full object-cover"
-              >
+                sizes="320px sm:100vw md:60vw"
+              />
             </div>
-            <img
+            <NuxtImg
                 :src="selectedAnomaly.squareImg"
                 alt=""
                 aria-hidden="true"
                 class="square-img pointer-events-none absolute inset-0 h-full w-full object-fill"
-            >
-              <img
+                provider="none"
+            />
+              <NuxtImg
               :src="selectedAnomaly.alertImg"
               alt=""
               aria-hidden="true"
               class="alert-img pointer-events-none absolute inset-0 h-full w-full object-fill"
-              ref="alertImage"
-            >
+              provider="none"
+            />
             <div
               class="absolute inset-y-0 z-10 w-0.5 bg-primary"
               :class="!isDragging && 'transition-[left] duration-500 motion-reduce:transition-none'"
@@ -138,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div class="z-1 bg-linear absolute bottom-0 w-full left-0 right-0 bg-linear-to-b from-transparent to-primary h-[25vh]"></div>
+    <div class="z-1 bg-linear absolute bottom-0 w-full left-0 right-0 bg-linear-to-b from-transparent to-primary h-[15vh]"></div>
   </div>
 </template>
 
@@ -226,7 +230,7 @@ const anomaliesList = [
 ]
 
 const selectedAnomaly = ref<(typeof anomaliesList)[number]>(anomaliesList[0]!)
-const alertImage = ref<HTMLImageElement | null>(null)
+const imageComparison = ref<HTMLDivElement | null>(null)
 const comparisonPosition = ref(50)
 const isDragging = ref(false)
 const activePointerId = ref<number | null>(null)
@@ -237,7 +241,8 @@ const comparisonValueText = computed(() => (
 ))
 
 onMounted(() => {
-  if (!alertImage.value || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  const alertImage = imageComparison.value?.querySelector('.alert-img')
+  if (!alertImage || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
   alertPulse = gsap.to(alertImage.value, {
     opacity: 0.15,

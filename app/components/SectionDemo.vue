@@ -21,7 +21,8 @@
       <a class="bg-primary text-foreground text-xl flex items-center px-4 text-center mt-(--md)" href="mailto:hello@str-drones.eu">Envianos un correo →</a>
       <div class="text-xs font-mono text-gray opacity-50 uppercase mt-(--md) px-(--md) text-balance">Se abrirá tu gestor de correo. Si lo prefieres, puedes escribir a hello@str-drones.eu</div>
     </div>
-    <div class="z-1 bg-linear absolute top-0 w-full left-0 right-0 bg-linear-to-b from-primary to-transparent h-[40vh]"></div>
+    <logo-marquee />
+    <div class="z-1 bg-linear absolute top-0 w-full left-0 right-0 bg-linear-to-b from-primary to-transparent h-[50vh]"></div>
   </div>
 </template>
 

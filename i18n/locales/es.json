@@ -9,14 +9,16 @@
     "emptyState": "Estamos preparando nuevas historias. Vuelve pronto.",
     "footerTagline": "DATOS CLAROS. DECISIONES MEJORES.",
     "followLinkedIn": "Síguenos en LinkedIn",
-    "seoTitle": "Blog | STR Drones",
+    "seoTitle": "Blog",
     "seoDescription": "Historias, tecnología y aprendizajes del equipo STR Drones.",
     "backToBlog": "VOLVER AL BLOG",
     "backToAllPosts": "VOLVER A TODAS LAS PUBLICACIONES",
     "articleNotFound": "Artículo no encontrado"
   },
   "home": {
-    "welcome": "Bienvenido"
+    "welcome": "Bienvenido",
+    "seoTitle": "Inspección solar con drones",
+    "seoDescription": "Inspección de plantas solares con drones y termografía para detectar averías y mejorar el rendimiento."
   },
   "maps": {
     "inspection": "Estado de la inspección",

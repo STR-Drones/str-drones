@@ -1,4 +1,5 @@
 import { defineCollection, defineContentConfig } from '@nuxt/content'
+import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
 import { z } from 'zod'
 
 export default defineContentConfig({
@@ -14,6 +15,7 @@ export default defineContentConfig({
           'Cover must be a root-relative local path or an HTTP(S) URL',
         ),
         coverAlt: z.string(),
+        sitemap: defineSitemapSchema(),
       }),
     }),
   }
