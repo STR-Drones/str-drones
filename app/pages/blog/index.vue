@@ -19,7 +19,7 @@
               <NuxtImg
                 :src="post.cover"
                 :alt="post.coverAlt"
-                :provider="post.cover.startsWith('/') ? 'ipx' : 'none'"
+                :provider="post.cover.startsWith('/') ? undefined : 'none'"
                 sizes="320px sm:50vw lg:33vw"
                 loading="lazy"
               />
