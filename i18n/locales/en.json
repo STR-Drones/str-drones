@@ -40,5 +40,21 @@
     "comparisonSlider": "RGB and thermal image comparison slider",
     "showThermal": "Show thermal",
     "showRgb": "Show RGB"
+  },
+  "form": {
+    "privacy": "I have read and accept the",
+    "privacyLink": "privacy policy",
+    "sending": "Sending...",
+    "submit": "Send",
+    "recaptchaNotice": "This site is protected by reCAPTCHA and the Google {privacy} and {terms} apply.",
+    "googlePrivacy": "Privacy Policy",
+    "googleTerms": "Terms of Service",
+    "result": {
+      "success": "Thanks! We'll get back to you shortly.",
+      "captcha": "We couldn't verify you're human. Please try again.",
+      "rate_limited": "Too many requests. Please try again in a minute.",
+      "invalid": "Please check the form fields.",
+      "internal": "We couldn't send your request. Please email us at hello{'@'}str-drones.com."
+    }
   }
 }

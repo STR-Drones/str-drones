@@ -48,6 +48,13 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    public: {
+      // Web App de Apps Script que recibe los formularios y clave de sitio de reCAPTCHA (ambas públicas)
+      formEndpoint: process.env.NUXT_PUBLIC_FORM_ENDPOINT || '',
+      recaptchaSiteKey: process.env.NUXT_PUBLIC_RECAPTCHA_SITE_KEY || '',
+    },
+  },
   vite: {
     plugins: [
       tailwindcss(),

@@ -25,8 +25,8 @@
     "completed": "Completada",
     "anomalies": "Anomalías detectadas",
     "thermal": "Imagen térmica",
-    "anomalyType" : "Tipo de anomalía",
-    "anomalyTypes" : {
+    "anomalyType": "Tipo de anomalía",
+    "anomalyTypes": {
       "cell": "Cell",
       "multicell": "Multi-Cell",
       "module": "Module",
@@ -50,5 +50,21 @@
     "comparisonSlider": "Deslizador de comparación RGB e imagen térmica",
     "showThermal": "Ver térmica",
     "showRgb": "Ver RGB"
+  },
+  "form": {
+    "privacy": "He leído y acepto la",
+    "privacyLink": "política de privacidad",
+    "sending": "Enviando...",
+    "submit": "Enviar",
+    "recaptchaNotice": "Este sitio está protegido por reCAPTCHA y se aplican la {privacy} y los {terms} de Google.",
+    "googlePrivacy": "Política de privacidad",
+    "googleTerms": "Términos del servicio",
+    "result": {
+      "success": "¡Gracias! Te responderemos en breve.",
+      "captcha": "No hemos podido verificar que eres una persona. Inténtalo de nuevo.",
+      "rate_limited": "Demasiadas solicitudes. Inténtalo dentro de un minuto.",
+      "invalid": "Revisa los campos del formulario.",
+      "internal": "No hemos podido enviar tu solicitud. Escríbenos a hello{'@'}str-drones.com."
+    }
   }
 }
