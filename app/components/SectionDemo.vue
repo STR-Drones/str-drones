@@ -13,52 +13,52 @@
       <animated-p class="text-lg max-w-[40ch] leading-[1.2] text-balance p-(--sm)">
         <slot name="description"></slot>
       </animated-p>
-      <form class="grid w-full max-w-3xl grid-cols-1 gap-(--sm) px-(--sm) text-left md:grid-cols-2 mt-(--md)" @submit.prevent="submit">
+      <form class="text-base grid w-full grid-cols-1 gap-(--md) px-(--sm) text-left mt-(--md) md:grid-cols-2" @submit.prevent="submit">
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.firstName') }}</span>
-          <input v-model="fields.firstName" class="border border-current/30 bg-transparent p-3" name="firstName" autocomplete="given-name" required />
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.firstName') }}</span>
+          <input v-model="fields.firstName" class="border border-current/30 bg-foreground/1 p-3" name="firstName" autocomplete="given-name" required />
         </label>
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.lastName') }}</span>
-          <input v-model="fields.lastName" class="border border-current/30 bg-transparent p-3" name="lastName" autocomplete="family-name" required />
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.lastName') }}</span>
+          <input v-model="fields.lastName" class="border border-current/30 bg-foreground/1 p-3" name="lastName" autocomplete="family-name" required />
         </label>
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.email') }}</span>
-          <input v-model="fields.email" class="border border-current/30 bg-transparent p-3" name="email" type="email" autocomplete="email" required />
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.email') }}</span>
+          <input v-model="fields.email" class="border border-current/30 bg-foreground/1 p-3" name="email" type="email" autocomplete="email" required />
         </label>
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.country') }}</span>
-          <input v-model="fields.country" class="border border-current/30 bg-transparent p-3" name="country" autocomplete="country-name" required />
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.country') }}</span>
+          <input v-model="fields.country" class="border border-current/30 bg-foreground/1 p-3" name="country" autocomplete="country-name" required />
         </label>
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.companyName') }}</span>
-          <input v-model="fields.companyName" class="border border-current/30 bg-transparent p-3" name="companyName" autocomplete="organization" required />
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.companyName') }}</span>
+          <input v-model="fields.companyName" class="border border-current/30 bg-foreground/1 p-3" name="companyName" autocomplete="organization" required />
         </label>
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.companyType') }}</span>
-          <select v-model="fields.companyType" class="border border-current/30 bg-transparent p-3" name="companyType" required>
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.companyType') }}</span>
+          <select v-model="fields.companyType" class="border border-current/30 bg-foreground/1 p-3" name="companyType" required>
             <option disabled value="">{{ t('form.selectCompanyType') }}</option>
             <!-- El value tiene que ser exactamente el de la lista -->
             <option v-for="v in COMPANY_TYPES" :key="v" :value="v">{{ v }}</option>
           </select>
         </label>
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.solarCapacity') }}</span>
-          <select v-model="fields.solarCapacity" class="border border-current/30 bg-transparent p-3" name="solarCapacity" required>
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.solarCapacity') }}</span>
+          <select v-model="fields.solarCapacity" class="border border-current/30 bg-foreground/1 p-3" name="solarCapacity" required>
             <option disabled value="">{{ t('form.selectSolarCapacity') }}</option>
             <option v-for="v in SOLAR_CAPACITIES" :key="v" :value="v">{{ v }}</option>
           </select>
         </label>
         <label class="flex flex-col gap-1">
-          <span>{{ t('form.leadSource') }}</span>
-          <select v-model="fields.leadSource" class="border border-current/30 bg-transparent p-3" name="leadSource" required>
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.leadSource') }}</span>
+          <select v-model="fields.leadSource" class="border border-current/30 bg-foreground/1 p-3" name="leadSource" required>
             <option disabled value="">{{ t('form.selectLeadSource') }}</option>
             <option v-for="v in LEAD_SOURCES" :key="v" :value="v">{{ v }}</option>
           </select>
         </label>
         <label class="flex flex-col gap-1 md:col-span-2">
-          <span>{{ t('form.message') }}</span>
-          <textarea v-model="fields.message" class="min-h-32 resize-y border border-current/30 bg-transparent p-3" name="message" rows="4"></textarea>
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground">{{ t('form.message') }}</span>
+          <textarea v-model="fields.message" class="min-h-32 resize-y border border-current/30 bg-foreground/1 p-3" name="message" rows="4"></textarea>
         </label>
         <div class="hp" aria-hidden="true">
           <label for="website">Website</label>
@@ -66,7 +66,7 @@
         </div>
         <label class="flex items-start gap-2 md:col-span-2">
           <input v-model="privacyAccepted" type="checkbox" required />
-          <span>{{ t('form.privacy') }} <NuxtLink :to="localePath('/privacy-policy')" target="_blank">{{ t('form.privacyLink') }}</NuxtLink></span>
+          <span class="text-sm uppercase font-mono tracking-wide text-foreground/50">{{ t('form.privacy') }} <NuxtLink :to="localePath('/privacy-policy')" target="_blank">{{ t('form.privacyLink') }}</NuxtLink></span>
         </label>
         <button class="bg-foreground px-6 py-3 text-background disabled:cursor-not-allowed disabled:opacity-50 md:col-span-2" type="submit" :disabled="isSubmitting || !privacyAccepted">
           {{ isSubmitting ? t('form.sending') : t('form.submit') }}
