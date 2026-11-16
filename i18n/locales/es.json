@@ -52,6 +52,18 @@
     "showRgb": "Ver RGB"
   },
   "form": {
+    "firstName": "Nombre",
+    "lastName": "Apellidos",
+    "email": "Correo electrónico",
+    "country": "País",
+    "companyName": "Nombre de la empresa",
+    "companyType": "Tipo de empresa",
+    "selectCompanyType": "Selecciona el tipo de empresa",
+    "solarCapacity": "Capacidad de la cartera solar",
+    "selectSolarCapacity": "Selecciona la capacidad de tu cartera",
+    "leadSource": "¿Cómo nos has conocido?",
+    "selectLeadSource": "Selecciona una opción",
+    "message": "Mensaje (opcional)",
     "privacy": "He leído y acepto la",
     "privacyLink": "política de privacidad",
     "sending": "Enviando...",
