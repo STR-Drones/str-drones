@@ -30,9 +30,6 @@ export default defineNuxtConfig({
       ogDescription: 'Inspección de plantas solares con drones y termografía para detectar averías y mejorar el rendimiento.',
       ogImage: '/images/blog/solar-map.png',
       ogImageAlt: 'Mapa de una instalación solar inspeccionada por STR Drones',
-      twitterCard: 'summary_large_image',
-      twitterImage: '/images/blog/solar-map.png',
-      twitterImageAlt: 'Mapa de una instalación solar inspeccionada por STR Drones',
     },
   },
   schemaOrg: {

@@ -19,37 +19,33 @@
             @pointerup="stopComparisonDrag"
             @pointercancel="stopComparisonDrag"
           >
-            <NuxtImg
+            <img
               :src="selectedAnomaly.img"
               :alt="`${selectedAnomaly.type} anomaly in the RGB inspection image`"
               class="absolute inset-0 h-full w-full object-cover pointer-events-none"
-              sizes="320px sm:100vw md:60vw"
             />
             <div
               class="absolute inset-0 overflow-hidden"
               :class="!isDragging && 'transition-[clip-path] duration-500 motion-reduce:transition-none'"
               :style="{ clipPath: `inset(0 ${100 - comparisonPosition}% 0 0)` }"
             >
-              <NuxtImg
+              <img
                 :src="selectedAnomaly.thermalImg"
                 :alt="`${selectedAnomaly.type} anomaly in the thermal inspection image`"
                 class="pointer-events-none absolute inset-0 h-full w-full object-cover"
-                sizes="320px sm:100vw md:60vw"
               />
             </div>
-            <NuxtImg
+            <img
                 :src="selectedAnomaly.squareImg"
                 alt=""
                 aria-hidden="true"
                 class="square-img pointer-events-none absolute inset-0 h-full w-full object-fill"
-                provider="none"
             />
-              <NuxtImg
+              <img
               :src="selectedAnomaly.alertImg"
               alt=""
               aria-hidden="true"
               class="alert-img pointer-events-none absolute inset-0 h-full w-full object-fill"
-              provider="none"
             />
             <div
               class="absolute inset-y-0 z-10 w-0.5 bg-primary"

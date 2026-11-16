@@ -1,5 +1,5 @@
 <template>
-  <div class="logo-marquee pb-(--lg)" role="group" aria-label="Client and partner logos">
+  <div class="logo-marquee pt-(--lg) pb-(--xl)" role="group" aria-label="Client and partner logos">
     <div class="logo-marquee__track">
       <ul class="logo-marquee__group">
         <li

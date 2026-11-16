@@ -46,10 +46,6 @@ useSeoMeta({
   ogImage: () => post.value?.cover,
   ogImageAlt: () => post.value?.coverAlt,
   ogType: 'article',
-  twitterTitle: () => post.value?.title,
-  twitterDescription: () => post.value?.description,
-  twitterImage: () => post.value?.cover,
-  twitterImageAlt: () => post.value?.coverAlt,
 })
 
 const formatDate = (date: string) =>

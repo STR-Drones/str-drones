@@ -1,3 +1,8 @@
+---
+sitemap:
+  loc: /
+---
+
 ::section-hero
 Despeja la niebla
 

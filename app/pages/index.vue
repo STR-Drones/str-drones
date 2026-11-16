@@ -12,8 +12,6 @@ useSeoMeta({
   ogTitle: () => t('home.seoTitle'),
   ogDescription: () => t('home.seoDescription'),
   ogType: 'website',
-  twitterTitle: () => t('home.seoTitle'),
-  twitterDescription: () => t('home.seoDescription'),
 })
 </script>
 

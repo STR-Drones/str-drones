@@ -50,8 +50,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: cells.value,
       start: 'top 80%',
-      end: 'bottom 20%',
-      onEnter: ({progress, direction, isActive}) => console.log(progress, direction, isActive)
+      end: 'bottom 20%'
     }
   })
   tl.to('.cell-item', {

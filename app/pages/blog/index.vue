@@ -53,8 +53,6 @@ useSeoMeta({
   ogTitle: () => t('blog.seoTitle'),
   ogDescription: () => t('blog.seoDescription'),
   ogType: 'website',
-  twitterTitle: () => t('blog.seoTitle'),
-  twitterDescription: () => t('blog.seoDescription'),
 })
 
 const formatDate = (date: string) =>
