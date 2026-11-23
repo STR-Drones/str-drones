@@ -35,7 +35,7 @@ const { data: post } = await useAsyncData(
 )
 
 if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: t('blog.articleNotFound') })
+  await navigateTo('/', { redirectCode: 302 })
 }
 
 useSeoMeta({

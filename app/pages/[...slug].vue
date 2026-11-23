@@ -15,7 +15,7 @@ const { data: page } = await useAsyncData(
 )
 
 if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Página no encontrada', fatal: true })
+  await navigateTo('/', { redirectCode: 302 })
 }
 
 useSeoMeta({

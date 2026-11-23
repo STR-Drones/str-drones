@@ -75,8 +75,7 @@
     "otherVersions": "Version history",
     "inForceSince": "In force since {date}",
     "inForceBetween": "In force from {from} to {to}",
-    "outdatedNotice": "You are viewing a previous version of this document, which is no longer in force.",
-    "seeCurrent": "See the current version →",
-    "notFound": "Version not found"
+    "outdatedNotice": "You are viewing a previous version of this document.",
+    "seeCurrent": "See the current version →"
   }
 }

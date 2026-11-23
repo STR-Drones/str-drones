@@ -1,5 +1,5 @@
 <template>
-  <div v-if="current" class="slug-page legal-document w-full text-base mx-auto">
+  <div v-if="current" class="slug-page legal-document w-full text-base mx-auto pt-(--md)">
     <div class="legal-meta font-mono text-sm uppercase tracking-wide">
       <span>
         {{ t('legal.version', { n: current.version }) }}
@@ -64,12 +64,12 @@ const current = computed(() =>
 const isLatest = computed(() => current.value?.slug === latest.value?.slug)
 
 if (!current.value) {
-  throw createError({ statusCode: 404, statusMessage: t('legal.notFound'), fatal: true })
+  await navigateTo('/', { redirectCode: 302 })
 }
 
 const { data: page } = await useAsyncData(
   () => `legal-${props.document}-${current.value?.slug}`,
-  () => queryCollection('legal').path(current.value!.path).first(),
+  () => current.value ? queryCollection('legal').path(current.value.path).first() : Promise.resolve(null),
 )
 
 // Las versiones anteriores (y los enlaces permanentes /vN) no se indexan:

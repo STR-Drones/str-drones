@@ -85,8 +85,7 @@
     "otherVersions": "Historial de versiones",
     "inForceSince": "En vigor desde el {date}",
     "inForceBetween": "En vigor del {from} al {to}",
-    "outdatedNotice": "Estás consultando una versión anterior de este documento, que ya no está en vigor.",
-    "seeCurrent": "Ver la versión vigente →",
-    "notFound": "Versión no encontrada"
+    "outdatedNotice": "Estás consultando una versión anterior de este documento.",
+    "seeCurrent": "Ver la versión vigente →"
   }
 }
