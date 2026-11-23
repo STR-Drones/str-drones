@@ -78,5 +78,15 @@
       "invalid": "Revisa los campos del formulario.",
       "internal": "No hemos podido enviar tu solicitud. Escríbenos a hello{'@'}str-drones.com."
     }
+  },
+  "legal": {
+    "version": "Versión {n}",
+    "current": "vigente",
+    "otherVersions": "Historial de versiones",
+    "inForceSince": "En vigor desde el {date}",
+    "inForceBetween": "En vigor del {from} al {to}",
+    "outdatedNotice": "Estás consultando una versión anterior de este documento, que ya no está en vigor.",
+    "seeCurrent": "Ver la versión vigente →",
+    "notFound": "Versión no encontrada"
   }
 }

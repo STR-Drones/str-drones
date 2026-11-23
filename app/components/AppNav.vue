@@ -28,8 +28,8 @@
           </div>
           <div class="flex flex-col gap-1">
             <div class="bg-gray-light w-full px-2 mb-2 font-mono leading-wider">LEGAL</div>
-            <nuxt-link to="terms-and-conditions" class="text-md link">Términos y condiciones generales</nuxt-link>
-            <nuxt-link to="terms-specific" class="text-md link">Términos y condiciones particulares</nuxt-link>
+            <nuxt-link to="/terms-and-conditions" class="text-md link">Términos y condiciones generales</nuxt-link>
+            <nuxt-link to="/terms-specific" class="text-md link">Términos y condiciones particulares</nuxt-link>
           </div>
         </div>
       </div>

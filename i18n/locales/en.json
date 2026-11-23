@@ -68,5 +68,15 @@
       "invalid": "Please check the form fields.",
       "internal": "We couldn't send your request. Please email us at hello{'@'}str-drones.com."
     }
+  },
+  "legal": {
+    "version": "Version {n}",
+    "current": "current",
+    "otherVersions": "Version history",
+    "inForceSince": "In force since {date}",
+    "inForceBetween": "In force from {from} to {to}",
+    "outdatedNotice": "You are viewing a previous version of this document, which is no longer in force.",
+    "seeCurrent": "See the current version →",
+    "notFound": "Version not found"
   }
 }

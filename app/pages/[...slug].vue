@@ -14,6 +14,10 @@ const { data: page } = await useAsyncData(
   () => queryCollection('content').path(path.value).first()
 )
 
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Página no encontrada', fatal: true })
+}
+
 useSeoMeta({
   title: () => page.value?.title ?? 'STR Drones',
   description: () => page.value?.description,

@@ -4,8 +4,8 @@
       <div class="flex items-baseline gap-(--sm)">
         <div class="h-[1em] bg-foreground aspect-square"></div>
         <div class="flex flex-col">
-          <nuxt-link to="terms-and-conditions" class="link">Términos y condiciones generales</nuxt-link>
-          <nuxt-link to="terms-specific" class="link">Términos y condiciones particulares</nuxt-link>
+          <nuxt-link to="/terms-and-conditions" class="link">Términos y condiciones generales</nuxt-link>
+          <nuxt-link to="/terms-specific" class="link">Términos y condiciones particulares</nuxt-link>
         </div>
       </div>
       <div class="flex items-baseline gap-(--sm)">
